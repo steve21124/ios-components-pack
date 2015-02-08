@@ -8,20 +8,47 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <FBLoginViewDelegate>
+
+@property (weak, nonatomic) IBOutlet FBLoginView *loginButton;
+
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+#pragma mark - View lifecycle
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.loginButton.delegate = self;
+    self.loginButton.readPermissions = @[@"public_profile", @"email"];
+}
+
+#pragma mark - FBLoginViewDelegate
+
+- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView
+{
+    NSLog(@"You are logged in.");
+}
+
+-(void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user{
+    NSLog(@"%@", user);
+    
+}
+
+-(void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView
+{
+    NSLog(@"You are logged out.");
+}
+
+-(void)loginView:(FBLoginView *)loginView handleError:(NSError *)error{
+    NSLog(@"%@", [error localizedDescription]);
 }
 
 @end
