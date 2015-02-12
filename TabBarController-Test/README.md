@@ -1,4 +1,4 @@
-# Tab bar controller
+ # Tab bar controller
 
 Add Another Tab:
 
@@ -10,4 +10,4 @@ Add Another Tab:
 
 4. Choose segue `Relationship segues > view controllers`.
 
-
+5. We can add `Navigation controller container to tab`.
