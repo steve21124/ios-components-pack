@@ -2,12 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,13 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m7I-Ux-Pug">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="329"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7I-Ux-Pug" userLabel="Capture View">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22f-1i-GcG">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="329"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22f-1i-GcG">
+                                        <rect key="frame" x="228" y="490" width="80" height="80"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="( Take Photo )">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="y3Z-8b-WKN"/>
+                                            <constraint firstAttribute="width" constant="80" id="zvk-zR-Yj7"/>
+                                        </constraints>
+                                        <state key="normal" image="camera-80">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -31,20 +36,84 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="22f-1i-GcG" secondAttribute="centerX" constant="32" id="SDu-dZ-pj0"/>
+                                    <constraint firstAttribute="bottom" secondItem="22f-1i-GcG" secondAttribute="bottom" constant="30" id="YDR-aO-pcH"/>
+                                </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mh6-hS-b17">
-                                <rect key="frame" x="0.0" y="337" width="414" height="263"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m7I-Ux-Pug" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="77y-oK-Gdd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m7I-Ux-Pug" secondAttribute="trailing" constant="-16" id="WCU-VF-sIa"/>
+                            <constraint firstItem="m7I-Ux-Pug" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="bIj-ko-8Ct"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m7I-Ux-Pug" secondAttribute="bottom" id="iAi-g1-eN5"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="frameForCapture" destination="m7I-Ux-Pug" id="SMQ-Xz-WDf"/>
-                        <outlet property="imageView" destination="Mh6-hS-b17" id="4xW-R8-KvC"/>
+                        <outlet property="takePhotoButton" destination="22f-1i-GcG" id="zFU-qz-eGs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="UK9-vI-Ecc">
+            <objects>
+                <viewController storyboardIdentifier="ViewController-1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ISF-Jg-y7d" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fBn-H5-B3j"/>
+                        <viewControllerLayoutGuide type="bottom" id="JEE-vD-hpl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gnu-Z9-7JX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0nR-dd-6jI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2to-bk-yjv">
+                                <rect key="frame" x="16" y="13" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7Wt-4s-PIc"/>
+                                    <constraint firstAttribute="width" constant="60" id="m8v-ZY-aMa"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonWasPressed:" destination="ISF-Jg-y7d" eventType="touchUpInside" id="egD-TX-nXd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Сфотографировали объект." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aws-hx-icR">
+                                <rect key="frame" x="186" y="56" width="228" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2to-bk-yjv" firstAttribute="leading" secondItem="gnu-Z9-7JX" secondAttribute="leadingMargin" id="9ft-cW-cbL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0nR-dd-6jI" secondAttribute="trailing" constant="-16" id="YSi-wT-uOj"/>
+                            <constraint firstItem="2to-bk-yjv" firstAttribute="top" secondItem="gnu-Z9-7JX" secondAttribute="topMargin" constant="13" id="YxK-eC-zEo"/>
+                            <constraint firstItem="0nR-dd-6jI" firstAttribute="leading" secondItem="gnu-Z9-7JX" secondAttribute="leadingMargin" constant="-16" id="si9-7J-O0R"/>
+                            <constraint firstItem="0nR-dd-6jI" firstAttribute="top" secondItem="gnu-Z9-7JX" secondAttribute="topMargin" id="wPq-rH-TpN"/>
+                            <constraint firstItem="JEE-vD-hpl" firstAttribute="top" secondItem="0nR-dd-6jI" secondAttribute="bottom" id="zlu-jo-ydF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="0nR-dd-6jI" id="xse-8d-QBK"/>
+                        <outlet property="label" destination="Aws-hx-icR" id="ATX-gM-IEQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVU-W7-0sp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="136"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="camera-80" width="40" height="40"/>
+    </resources>
 </document>
