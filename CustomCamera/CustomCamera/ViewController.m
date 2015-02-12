@@ -169,13 +169,9 @@
     [self dismissViewControllerAnimated:NO completion:nil];
 }
 
-- (void)dealloc
-{
-    //[super dealloc];
-    
+- (void)dealloc {
     self.session = nil;
     self.stillImageOutput = nil;
-    
     self.imageView = nil;
 }
 
