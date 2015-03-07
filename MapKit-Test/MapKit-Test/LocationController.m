@@ -12,6 +12,7 @@
 @interface LocationController () <CLLocationManagerDelegate>
 
 @property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic, strong) CLLocation *userLocation;
 
 @end
 
@@ -36,7 +37,7 @@
     self.locationManager.distanceFilter = kCLDistanceFilterNone;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     
-    //In `Info.plist` > NSLocationWhenInUseUsageDescription > Location is requered to find out where you are
+    //In `Info.plist`: KEY - NSLocationWhenInUseUsageDescription > VALUE - Location is requered to find out where you are
     if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
         [self.locationManager requestWhenInUseAuthorization];
     }
@@ -46,7 +47,7 @@
 
 #pragma mark - CLLocationManagerDelegate
 
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations\
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     CLLocation *location = [locations lastObject];
     NSLog(@"\n\nlatitude: %f \nlongitude: %f", location.coordinate.latitude, location.coordinate.longitude);
@@ -70,6 +71,14 @@
 //    }
 //}
 
+
+//Calculate distance between two locations.
+//- (void)calculateDistanceBetweenTwoLocations
+//{
+//    CLLocation *locA = [[CLLocation alloc] initWithLatitude:lat1 longitude:long1];
+//    CLLocation *locB = [[CLLocation alloc] initWithLatitude:lat2 longitude:long2];
+//    CLLocationDistance distance = [locA distanceFromLocation:locB];
+//}
 
 
 

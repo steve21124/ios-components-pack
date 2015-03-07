@@ -6,14 +6,15 @@ MapKit
 Link frameworks: `CoreLocation.framework, MapKit.framework`
 
 
-In `Info.plist` file must be following `KEYS` and enter string "Location is required to find out where you are".
+In `Info.plist` file must be following `KEYS` and enter string "Location is required to find out where you are" in `VALUE`
 
 ```objc
-NSLocationWhenInUseUsageDescription
-NSLocationAlwaysUsageDescription
+//Put this KEY to Info.plist
+NSLocationWhenInUseUsageDescription - KEY
+NSLocationAlwaysUsageDescription - KEY
 ```
 
-Request autorization
+Request authorization
 
 ```objc
 [self.locationManager requestWhenInUseAuthorization]
@@ -21,7 +22,7 @@ Request autorization
 ```
 
 //Check location on simulator
-Debug > Simulate Location > Moscoe
+Debug > Simulate Location > Moscow
 
 
 
