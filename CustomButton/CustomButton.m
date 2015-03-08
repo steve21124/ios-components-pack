@@ -48,7 +48,7 @@
 - (void)drawButton
 {
     CALayer *layer = self.layer;
-    layer.cornerRadius = 2;
+    layer.cornerRadius = 1.5;
     layer.borderWidth = 1;
     layer.borderColor = [UIColor buttonColor].CGColor;
     layer.backgroundColor = [UIColor buttonColor].CGColor;

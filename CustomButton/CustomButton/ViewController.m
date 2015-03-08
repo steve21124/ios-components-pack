@@ -11,6 +11,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet CustomButton *friendsButton;
+
 @end
 
 @implementation ViewController
@@ -29,5 +31,9 @@
 //    [self.view addSubview:button];
 }
 
+- (IBAction)friendsButtonWasPressed:(id)sender
+{
+    NSLog(@"Friends Button");
+}
 
 @end
