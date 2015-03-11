@@ -3,7 +3,7 @@ Splash Screen - how to create spash screens with timing
 
 ## LaunchScreen.xib
 
-Put UIImageView in LaunchScreen.xib and add space constraints (top, bottom, left, right)
+Put UIImageView in `LaunchScreen.xib` and add space constraints (top, bottom, left, right)
 Change xib size: 320x560
 
 ```objc
