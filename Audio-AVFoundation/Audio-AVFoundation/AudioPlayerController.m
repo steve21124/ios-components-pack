@@ -50,11 +50,13 @@
 
 - (void)setupAudio
 {
-    NSString *audioUrlPath = [[NSBundle mainBundle] pathForResource:@"sound_1" ofType:@"wav"];
+    NSString *audioUrlPath = [[NSBundle mainBundle] pathForResource:@"warning" ofType:@"caf"];
     NSURL *pathUrl = [[NSURL alloc] initFileURLWithPath:audioUrlPath];
     
     NSError *error;
     self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:pathUrl error:&error];
+    self.player.numberOfLoops = 3;
+    self.player.delegate = self;
     
     if (error) {
         NSLog(@"%@", [error localizedDescription]);
@@ -62,7 +64,6 @@
     else {
         [self.player prepareToPlay];
     }
-    self.player.delegate = self;
 }
 
 - (void)playAudio

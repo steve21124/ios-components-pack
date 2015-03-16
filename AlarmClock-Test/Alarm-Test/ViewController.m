@@ -41,14 +41,23 @@
     //Set local notification method
     [self scheduleLocalNotificationWithDate:_dateTimePicker.date andBlock:^(BOOL isScheduled) {
         if (isScheduled) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Notification was sheduled" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-            [alert show];
+            [self presentMessage:@"Notification was set"];
         }
     }];
 }
 
-- (void)cancelButtonWasPressed:(id)sender {
+- (void)presentMessage:(NSString *)message
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alert show];
+}
+
+- (void)cancelButtonWasPressed:(id)sender
+{    
+    [self presentMessage:@"Notification was cancel"];
     
+    //Cancel all local notifications.
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
 }
 
 #pragma mark - Actions

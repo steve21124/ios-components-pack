@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7514A14A1AB730A900D4062D /* warning.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7514A1491AB730A900D4062D /* warning.caf */; };
 		7546A5431AAB776400E6DD25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7546A5421AAB776400E6DD25 /* main.m */; };
 		7546A5461AAB776400E6DD25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7546A5451AAB776400E6DD25 /* AppDelegate.m */; };
 		7546A54C1AAB776400E6DD25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7546A54A1AAB776400E6DD25 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7514A1491AB730A900D4062D /* warning.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = warning.caf; sourceTree = "<group>"; };
 		7546A53D1AAB776400E6DD25 /* Audio-AVFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio-AVFoundation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7546A5411AAB776400E6DD25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7546A5421AAB776400E6DD25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		7546A5791AAB7E1900E6DD25 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				7514A1491AB730A900D4062D /* warning.caf */,
 				7546A56F1AAB7E1500E6DD25 /* drum_1.mp3 */,
 				7546A5701AAB7E1500E6DD25 /* sound_1.wav */,
 				7546A5711AAB7E1500E6DD25 /* sound_2.wav */,
@@ -261,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7514A14A1AB730A900D4062D /* warning.caf in Resources */,
 				7546A5771AAB7E1500E6DD25 /* sound_3.wav in Resources */,
 				7546A54C1AAB776400E6DD25 /* Main.storyboard in Resources */,
 				7546A5741AAB7E1500E6DD25 /* drum_1.mp3 in Resources */,
@@ -482,6 +486,7 @@
 				7546A5621AAB776400E6DD25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7546A5631AAB776400E6DD25 /* Build configuration list for PBXNativeTarget "Audio-AVFoundationTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				7546A5651AAB776400E6DD25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
