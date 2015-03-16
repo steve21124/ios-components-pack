@@ -21,7 +21,8 @@ Delegate
 <AVAudioPlayerDelegate>
 `
 
-Example of use
+
+##Example of use
 
 ```objc
 //Add protocol
@@ -63,7 +64,7 @@ Example of use
 
 ```
 
-Example of AudioManager
+##Example of AudioManager
 
 ```objc
 

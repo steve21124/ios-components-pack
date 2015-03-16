@@ -16,8 +16,9 @@
 		7514A1331AB6EE3C00D4062D /* Alarm_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7514A1321AB6EE3C00D4062D /* Alarm_TestTests.m */; };
 		7514A1401AB7042E00D4062D /* warning.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7514A13F1AB7042E00D4062D /* warning.caf */; };
 		7514A1411AB7042E00D4062D /* warning.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7514A13F1AB7042E00D4062D /* warning.caf */; };
-		7514A1431AB7089F00D4062D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7514A1421AB7089F00D4062D /* AudioToolbox.framework */; };
 		7514A1481AB72CE600D4062D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 7514A1471AB72CE600D4062D /* README.md */; };
+		7514A1511AB7571900D4062D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7514A14F1AB7570C00D4062D /* AVFoundation.framework */; };
+		7514A1551AB7573A00D4062D /* AudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7514A1541AB7573A00D4062D /* AudioManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +46,10 @@
 		7514A1311AB6EE3C00D4062D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7514A1321AB6EE3C00D4062D /* Alarm_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Alarm_TestTests.m; sourceTree = "<group>"; };
 		7514A13F1AB7042E00D4062D /* warning.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = warning.caf; sourceTree = "<group>"; };
-		7514A1421AB7089F00D4062D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7514A1471AB72CE600D4062D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7514A14F1AB7570C00D4062D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7514A1531AB7573A00D4062D /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
+		7514A1541AB7573A00D4062D /* AudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7514A1431AB7089F00D4062D /* AudioToolbox.framework in Frameworks */,
+				7514A1511AB7571900D4062D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +97,7 @@
 				7514A11B1AB6EE3C00D4062D /* AppDelegate.m */,
 				7514A13D1AB6F0C700D4062D /* Storyboards */,
 				7514A13C1AB6F0BE00D4062D /* Controllers */,
+				7514A1561AB7573F00D4062D /* AudioManager */,
 				7514A13E1AB6F0D400D4062D /* Resources */,
 				7514A1161AB6EE3C00D4062D /* Supporting Files */,
 				7514A1461AB72A4C00D4062D /* Frameworks */,
@@ -157,10 +161,19 @@
 		7514A1461AB72A4C00D4062D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7514A1421AB7089F00D4062D /* AudioToolbox.framework */,
+				7514A14F1AB7570C00D4062D /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		7514A1561AB7573F00D4062D /* AudioManager */ = {
+			isa = PBXGroup;
+			children = (
+				7514A1531AB7573A00D4062D /* AudioManager.h */,
+				7514A1541AB7573A00D4062D /* AudioManager.m */,
+			);
+			name = AudioManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +281,7 @@
 				7514A11F1AB6EE3C00D4062D /* ViewController.m in Sources */,
 				7514A11C1AB6EE3C00D4062D /* AppDelegate.m in Sources */,
 				7514A1481AB72CE600D4062D /* README.md in Sources */,
+				7514A1551AB7573A00D4062D /* AudioManager.m in Sources */,
 				7514A1191AB6EE3C00D4062D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

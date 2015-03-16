@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "AudioManager.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <UIAlertViewDelegate>
 
 @end
 
@@ -51,9 +52,26 @@
     
     NSLog(@"\ndidReceiveLocalNotification");
     
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"The timer was expired in 10 minutes" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alert show];
+    
+    [[AudioManager sharedManager] setupAudio:@"warning.caf"];
+    [[AudioManager sharedManager] playAudio];
     
     //AlertView with sound.
-    
 }
+
+#pragma mark - UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == [@0 integerValue])
+    {
+        //UILocalNotifications
+        [[UIApplication sharedApplication] cancelAllLocalNotifications];
+        [[AudioManager sharedManager] stopAudio];
+    }
+}
+
 
 @end

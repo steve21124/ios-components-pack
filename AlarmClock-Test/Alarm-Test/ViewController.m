@@ -78,7 +78,6 @@
     
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
     
-    //present notification now
     //[[UIApplication sharedApplication] presentLocalNotificationNow:notification];
     
     block(YES);
