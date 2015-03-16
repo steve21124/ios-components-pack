@@ -6,27 +6,27 @@
 //  Copyright (c) 2015 Artur Igberdin. All rights reserved.
 //
 
-@import AVFoundation;
 #import "AudioPlayerController.h"
+#import "AudioManager.h"
 
-@interface AudioPlayerController ()<AVAudioPlayerDelegate>
+@interface AudioPlayerController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
-//AVFoundation
-@property (nonatomic, retain) AVAudioPlayer *player;
 
 @end
 
 @implementation AudioPlayerController
 
+#pragma mark - View lifecycle
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
      self.clearsSelectionOnViewWillAppear = NO;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
 }
 
 #pragma mark - Events
@@ -36,45 +36,14 @@
     if (!_playButton.selected){
         self.playButton.selected = YES;
         
-        [self setupAudio];
-        [self playAudio];
+        [[AudioManager sharedManager] setupAudio:@"drum_1.mp3"];
+        [[AudioManager sharedManager] playAudio];
     }
     else {
         self.playButton.selected = NO;
-        
-        [self stopAudio];
+
+        [[AudioManager sharedManager] stopAudio];
     }
 }
-
-#pragma mark - Actions
-
-- (void)setupAudio
-{
-    NSString *audioUrlPath = [[NSBundle mainBundle] pathForResource:@"warning" ofType:@"caf"];
-    NSURL *pathUrl = [[NSURL alloc] initFileURLWithPath:audioUrlPath];
-    
-    NSError *error;
-    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:pathUrl error:&error];
-    self.player.numberOfLoops = 3;
-    self.player.delegate = self;
-    
-    if (error) {
-        NSLog(@"%@", [error localizedDescription]);
-    }
-    else {
-        [self.player prepareToPlay];
-    }
-}
-
-- (void)playAudio
-{
-    [self.player play];
-}
-
-- (void)stopAudio
-{
-    [self.player stop];
-}
-
 
 @end

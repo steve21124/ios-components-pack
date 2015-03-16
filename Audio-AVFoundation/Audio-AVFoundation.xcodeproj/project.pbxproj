@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7514A14A1AB730A900D4062D /* warning.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7514A1491AB730A900D4062D /* warning.caf */; };
+		7514A14E1AB7382800D4062D /* AudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7514A14D1AB7382800D4062D /* AudioManager.m */; };
 		7546A5431AAB776400E6DD25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7546A5421AAB776400E6DD25 /* main.m */; };
 		7546A5461AAB776400E6DD25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7546A5451AAB776400E6DD25 /* AppDelegate.m */; };
 		7546A54C1AAB776400E6DD25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7546A54A1AAB776400E6DD25 /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		7514A1491AB730A900D4062D /* warning.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = warning.caf; sourceTree = "<group>"; };
+		7514A14C1AB7382800D4062D /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
+		7514A14D1AB7382800D4062D /* AudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioManager.m; sourceTree = "<group>"; };
 		7546A53D1AAB776400E6DD25 /* Audio-AVFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio-AVFoundation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7546A5411AAB776400E6DD25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7546A5421AAB776400E6DD25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7514A14B1AB7380F00D4062D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7514A14C1AB7382800D4062D /* AudioManager.h */,
+				7514A14D1AB7382800D4062D /* AudioManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		7546A5341AAB776400E6DD25 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,7 @@
 				7546A5451AAB776400E6DD25 /* AppDelegate.m */,
 				7546A56A1AAB791900E6DD25 /* Storyboards */,
 				7546A5691AAB790D00E6DD25 /* Controllers */,
+				7514A14B1AB7380F00D4062D /* Managers */,
 				7546A56B1AAB794C00E6DD25 /* Resources */,
 				7546A5401AAB776400E6DD25 /* Supporting Files */,
 			);
@@ -293,6 +306,7 @@
 				7546A5461AAB776400E6DD25 /* AppDelegate.m in Sources */,
 				7546A56E1AAB7AA200E6DD25 /* AudioPlayerController.m in Sources */,
 				7546A57C1AAB7F9500E6DD25 /* README.md in Sources */,
+				7514A14E1AB7382800D4062D /* AudioManager.m in Sources */,
 				7546A5431AAB776400E6DD25 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
