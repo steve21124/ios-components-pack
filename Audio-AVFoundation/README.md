@@ -1,6 +1,8 @@
 Audio-AVFoundation
 ==
 
+##Setup process
+
 Link frameworks and libraries:
 
 `
@@ -20,7 +22,6 @@ Delegate
 `
 <AVAudioPlayerDelegate>
 `
-
 
 ##Example of use
 
@@ -67,7 +68,6 @@ Delegate
 ##Example of AudioManager
 
 ```objc
-
 @import Foundation;
 
 @interface AudioManager : NSObject
@@ -81,11 +81,11 @@ Delegate
 - (void)stopAudio;
 
 @end
+```
 
-
+```objc
 @import AVFoundation;
 #import "AudioManager.h"
-
 
 @interface AudioManager()<AVAudioPlayerDelegate>
 
@@ -105,7 +105,6 @@ Delegate
     dispatch_once(&predicate, ^{
         manager = [[self alloc] init];
     });
-
 return manager;
 }
 
@@ -129,13 +128,11 @@ return manager;
     }
 }
 
-- (void)playAudio
-{
+- (void)playAudio {
     [self.player play];
 }
 
-- (void)stopAudio
-{
+- (void)stopAudio {
     [self.player stop];
 }
 
