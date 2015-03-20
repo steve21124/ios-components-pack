@@ -108,16 +108,10 @@
 			children = (
 				757CF98D1A8FD55B0045A52B /* AppDelegate.h */,
 				757CF98E1A8FD55B0045A52B /* AppDelegate.m */,
-				757CF9901A8FD55B0045A52B /* ViewController.h */,
-				757CF9911A8FD55B0045A52B /* ViewController.m */,
-				757CF9931A8FD55B0045A52B /* Main.storyboard */,
-				757CF9961A8FD55B0045A52B /* Images.xcassets */,
-				757CF9981A8FD55B0045A52B /* LaunchScreen.xib */,
+				75D9F3861ABB6CDC00D08C5E /* Storyboards */,
+				75D9F37E1ABB57C600D08C5E /* Controllers */,
+				75D9F3871ABB6CE600D08C5E /* Resources */,
 				757CF9891A8FD55B0045A52B /* Supporting Files */,
-				75ACCA0C1A9004DC00D8F4EF /* MenuTableController.h */,
-				75ACCA0D1A9004DC00D8F4EF /* MenuTableController.m */,
-				75ACCA0F1A9007DC00D8F4EF /* MapController.h */,
-				75ACCA101A9007DC00D8F4EF /* MapController.m */,
 			);
 			path = "SWRevealViewController-Test";
 			sourceTree = "<group>";
@@ -146,6 +140,60 @@
 				757CF9A41A8FD55B0045A52B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75D9F37E1ABB57C600D08C5E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				75D9F37F1ABB580800D08C5E /* Slide Menu */,
+				75D9F3841ABB6B0200D08C5E /* Front */,
+				75D9F3851ABB6B0A00D08C5E /* Map */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		75D9F37F1ABB580800D08C5E /* Slide Menu */ = {
+			isa = PBXGroup;
+			children = (
+				75ACCA0C1A9004DC00D8F4EF /* MenuTableController.h */,
+				75ACCA0D1A9004DC00D8F4EF /* MenuTableController.m */,
+			);
+			name = "Slide Menu";
+			sourceTree = "<group>";
+		};
+		75D9F3841ABB6B0200D08C5E /* Front */ = {
+			isa = PBXGroup;
+			children = (
+				757CF9901A8FD55B0045A52B /* ViewController.h */,
+				757CF9911A8FD55B0045A52B /* ViewController.m */,
+			);
+			name = Front;
+			sourceTree = "<group>";
+		};
+		75D9F3851ABB6B0A00D08C5E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				75ACCA0F1A9007DC00D8F4EF /* MapController.h */,
+				75ACCA101A9007DC00D8F4EF /* MapController.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		75D9F3861ABB6CDC00D08C5E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				757CF9931A8FD55B0045A52B /* Main.storyboard */,
+				757CF9981A8FD55B0045A52B /* LaunchScreen.xib */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		75D9F3871ABB6CE600D08C5E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				757CF9961A8FD55B0045A52B /* Images.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		E1C003CBA1F1E6404C09A056 /* Frameworks */ = {

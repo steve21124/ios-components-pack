@@ -27,6 +27,7 @@
 }
 
 #pragma mark - segues
+
 - (void) prepareForSegue: (UIStoryboardSegue *) segue sender: (id) sender
 {
     // configure the destination view controller:
@@ -82,6 +83,7 @@
 }
 
 #pragma mark state preservation / restoration
+
 - (void)encodeRestorableStateWithCoder:(NSCoder *)coder {
     NSLog(@"%s", __PRETTY_FUNCTION__);
     

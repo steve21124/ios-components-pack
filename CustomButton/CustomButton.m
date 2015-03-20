@@ -34,6 +34,7 @@
     self = [super initWithCoder:coder];
     // Custom drawing methods
     if (self) {
+        
         [self drawButton];
         [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }
