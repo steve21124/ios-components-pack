@@ -97,15 +97,13 @@
 		75D9F51C1ABC715300D08C5E /* Facebook-sso-authentication */ = {
 			isa = PBXGroup;
 			children = (
-				75D9F54A1ABC770B00D08C5E /* Configurations */,
 				75D9F5211ABC715300D08C5E /* AppDelegate.h */,
 				75D9F5221ABC715300D08C5E /* AppDelegate.m */,
-				75D9F5241ABC715300D08C5E /* ViewController.h */,
-				75D9F5251ABC715300D08C5E /* ViewController.m */,
-				75D9F5271ABC715300D08C5E /* Main.storyboard */,
-				75D9F52A1ABC715300D08C5E /* Images.xcassets */,
-				75D9F52C1ABC715300D08C5E /* LaunchScreen.xib */,
+				75D9F5561AC0544900D08C5E /* Storyboards */,
+				75D9F5551AC0544100D08C5E /* Controllers */,
+				75D9F5571AC0545700D08C5E /* Resources */,
 				75D9F51D1ABC715300D08C5E /* Supporting Files */,
+				75D9F54A1ABC770B00D08C5E /* Configurations */,
 				75D9F5491ABC71A300D08C5E /* Frameworks */,
 			);
 			path = "Facebook-sso-authentication";
@@ -156,6 +154,32 @@
 				75D9F54E1ABC770B00D08C5E /* Project.xcconfig */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		75D9F5551AC0544100D08C5E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				75D9F5241ABC715300D08C5E /* ViewController.h */,
+				75D9F5251ABC715300D08C5E /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		75D9F5561AC0544900D08C5E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				75D9F5271ABC715300D08C5E /* Main.storyboard */,
+				75D9F52C1ABC715300D08C5E /* LaunchScreen.xib */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		75D9F5571AC0545700D08C5E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				75D9F52A1ABC715300D08C5E /* Images.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
