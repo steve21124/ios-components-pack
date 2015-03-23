@@ -10,9 +10,7 @@
 
 @interface ViewController () <FBLoginViewDelegate>
 
-
 @property (strong, nonatomic) id<FBGraphUser> loggedInUser;
-
 
 @end
 
@@ -41,19 +39,17 @@
 #endif
 #endif
     loginview.delegate = self;
-    
     [self.view addSubview:loginview];
-    
     [loginview sizeToFit];
 }
 
 - (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
     // test to see if we can use the share dialog built into the Facebook application
-    FBLinkShareParams *p = [[FBLinkShareParams alloc] init];
-    p.link = [NSURL URLWithString:@"http://developers.facebook.com/ios"];
-    BOOL canShareFB = [FBDialogs canPresentShareDialogWithParams:p];
-    BOOL canShareiOS6 = [FBDialogs canPresentOSIntegratedShareDialogWithSession:nil];
-    BOOL canShareFBPhoto = [FBDialogs canPresentShareDialogWithPhotos];
+//    FBLinkShareParams *p = [[FBLinkShareParams alloc] init];
+//    p.link = [NSURL URLWithString:@"http://developers.facebook.com/ios"];
+//    BOOL canShareFB = [FBDialogs canPresentShareDialogWithParams:p];
+//    BOOL canShareiOS6 = [FBDialogs canPresentOSIntegratedShareDialogWithSession:nil];
+//    BOOL canShareFBPhoto = [FBDialogs canPresentShareDialogWithPhotos];
     
 //    self.buttonPostStatus.enabled = canShareFB || canShareiOS6;
 //    self.buttonPostPhoto.enabled = canShareFBPhoto;
@@ -81,7 +77,6 @@
 }
 
 - (void)loginView:(FBLoginView *)loginView handleError:(NSError *)error {
-    
 //    // see https://developers.facebook.com/docs/reference/api/errors/ for general guidance on error handling for Facebook API
 //    // our policy here is to let the login view handle errors, but to log the results
 //    NSLog(@"FBLoginView encountered an error=%@", error);
@@ -97,7 +92,5 @@
 //    // "Post Status" available when logged on and potentially when logged off.  Differentiate in the label.
 //    [self.buttonPostStatus setTitle:@"Post Status Update (Logged On)" forState:self.buttonPostStatus.state];
 }
-
-
 
 @end
