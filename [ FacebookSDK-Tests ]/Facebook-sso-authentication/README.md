@@ -5,7 +5,7 @@ Facebook SSO Authentication
 
 2. Target > Project > URL Types
 
-Add URL Type > URL Schemes fb783515061684992
+Add `URL Type > URL Schemes fb783515061684992` (SSO Authentication work with url scheme.)
 
 3. Add FacebookSDK.framework from Podfile or manually to project.
 
