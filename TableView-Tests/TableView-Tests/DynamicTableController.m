@@ -12,6 +12,10 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+//Так можно делать только если контроллер наследуется от UITableViewController
+//@property (weak, nonatomic) IBOutlet UIButton *buttonHere;
+//@property (weak, nonatomic) IBOutlet UIButton *anotherButtonHere;
+
 @end
 
 @implementation DynamicTableController
@@ -46,5 +50,7 @@
     
     return cell;
 }
+
+
 
 @end

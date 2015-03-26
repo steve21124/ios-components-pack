@@ -124,6 +124,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Z1h-Rc-acK"/>
                     <connections>
+                        <outlet property="anotherButtonHere" destination="o9N-j3-vuR" id="uWK-nC-4Vn"/>
+                        <outlet property="buttonHere" destination="WVJ-Yp-6hA" id="3Ma-Ds-LpX"/>
                         <outlet property="tableView" destination="uuT-Dz-66p" id="6HF-Lx-tc5"/>
                     </connections>
                 </viewController>
