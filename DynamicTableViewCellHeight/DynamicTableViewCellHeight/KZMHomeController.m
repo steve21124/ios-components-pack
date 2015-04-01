@@ -68,9 +68,25 @@
                    @"Музей истории государственности татарского народа"
                    ];
     
-//    _tableData = @[
-//                   
-//                   ];
+    
+    
+    _imageData = @[@"icon_tukay",
+                   @"icon_university",
+                   @"icon_kremlin",
+                   @"icon_izo",
+                   @"icon_boratinsky",
+                   @"icon_hazine",
+                   @"icon_intro",
+                   @"icon_izo",
+                   @"icon_cannon",
+                   @"icon_kremlin",
+                   @"icon_national",
+                   @"icon_smena",
+                   @"icon_gorky",
+                   @"icon_statehood",
+                   @"icon_tolstoy"
+                   
+                   ];
     
     //[self configureTableView];
 }
@@ -90,7 +106,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    return 15;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -103,7 +119,19 @@
 
 - (void)configureCell:(KZMMuzeumCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
+    //Label
     cell.muzeumNameLabel.text = [_tableData objectAtIndex:indexPath.row];
+    
+    //Image
+    NSString *imageName = [_imageData objectAtIndex:indexPath.row];
+    cell.muzeumImageView.image = [UIImage imageNamed:imageName];
+    
+    //Cell Selection
+    //cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    UIView *selectedView = [[UIView alloc]init];
+    selectedView.backgroundColor = [UIColor blackColor];
+    
+    cell.selectedBackgroundView = selectedView;
 }
 
 #pragma mark - Cell Height
@@ -121,6 +149,13 @@
 //{
 //    return 50.f;
 //}
+
+#pragma mark - UITableViewDelegate
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"\n\n didSelect = %ld", (long)indexPath.row);
+}
 
 
 @end

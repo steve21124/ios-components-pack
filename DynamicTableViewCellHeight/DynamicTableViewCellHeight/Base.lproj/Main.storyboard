@@ -20,7 +20,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1. kremlin" translatesAutoresizingMaskIntoConstraints="NO" id="2lN-4k-Y3X">
                                 <rect key="frame" x="-5" y="-2" width="325" height="570"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="U8F-s3-b8s">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="U8F-s3-b8s">
                                 <rect key="frame" x="0.0" y="-2" width="320" height="570"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -30,7 +30,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="U8F-s3-b8s" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-2" id="3Yu-Ef-dZI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U8F-s3-b8s" secondAttribute="bottom" id="BIH-1a-P1J"/>
