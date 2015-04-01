@@ -157,5 +157,11 @@
     NSLog(@"\n\n didSelect = %ld", (long)indexPath.row);
 }
 
+#pragma mark - Status Bar
+
+//In Project-Info.plist set to UIViewControllerBasedStatusBarAppearance = YES.
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
 
 @end
