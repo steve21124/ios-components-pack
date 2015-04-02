@@ -17,6 +17,7 @@
 		75ACCA0E1A9004DC00D8F4EF /* MenuTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ACCA0D1A9004DC00D8F4EF /* MenuTableController.m */; };
 		75ACCA111A9007DC00D8F4EF /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ACCA101A9007DC00D8F4EF /* MapController.m */; };
 		75ACCA131A900C9B00D8F4EF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 75ACCA121A900C9B00D8F4EF /* README.md */; };
+		75F2B47F1ACD778D00140E55 /* RevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F2B47E1ACD778D00140E55 /* RevealController.m */; };
 		B90818327A2E53C6AA8DDFF7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 491B1CB0E0EF87F355C3A25B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		75ACCA0F1A9007DC00D8F4EF /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
 		75ACCA101A9007DC00D8F4EF /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
 		75ACCA121A900C9B00D8F4EF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		75F2B47D1ACD778D00140E55 /* RevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevealController.h; sourceTree = "<group>"; };
+		75F2B47E1ACD778D00140E55 /* RevealController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevealController.m; sourceTree = "<group>"; };
 		C0015C5795933387C8B23325 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +148,7 @@
 		75D9F37E1ABB57C600D08C5E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				75F2B47C1ACD775B00140E55 /* RevealController */,
 				75D9F37F1ABB580800D08C5E /* Slide Menu */,
 				75D9F3841ABB6B0200D08C5E /* Front */,
 				75D9F3851ABB6B0A00D08C5E /* Map */,
@@ -194,6 +198,15 @@
 				757CF9961A8FD55B0045A52B /* Images.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		75F2B47C1ACD775B00140E55 /* RevealController */ = {
+			isa = PBXGroup;
+			children = (
+				75F2B47D1ACD778D00140E55 /* RevealController.h */,
+				75F2B47E1ACD778D00140E55 /* RevealController.m */,
+			);
+			name = RevealController;
 			sourceTree = "<group>";
 		};
 		E1C003CBA1F1E6404C09A056 /* Frameworks */ = {
@@ -339,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F2B47F1ACD778D00140E55 /* RevealController.m in Sources */,
 				75ACCA131A900C9B00D8F4EF /* README.md in Sources */,
 				757CF9921A8FD55B0045A52B /* ViewController.m in Sources */,
 				75ACCA0E1A9004DC00D8F4EF /* MenuTableController.m in Sources */,

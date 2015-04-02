@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Reveal View Controller-->
+        <!--Reveal Controller-->
         <scene sceneID="bwk-KS-nfG">
             <objects>
-                <viewController storyboardIdentifier="SWRevealViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TKb-gN-ZIG" customClass="SWRevealViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RevealController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TKb-gN-ZIG" customClass="RevealController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="25q-yr-lJY"/>
                         <viewControllerLayoutGuide type="bottom" id="mlw-6C-poR"/>
@@ -226,6 +226,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="vOb-rO-lXB"/>
+        <segue reference="PrH-Rq-Ybo"/>
     </inferredMetricsTieBreakers>
 </document>
