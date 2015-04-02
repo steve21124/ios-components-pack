@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="sv0-0P-J2m">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -42,17 +42,66 @@
                             <constraint firstAttribute="trailingMargin" secondItem="U8F-s3-b8s" secondAttribute="trailing" constant="-16" id="tdc-gy-twk"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="7PX-qw-Gaw"/>
                     <connections>
                         <outlet property="tableView" destination="U8F-s3-b8s" id="Dn1-9C-YCb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="128"/>
+            <point key="canvasLocation" x="469" y="128"/>
+        </scene>
+        <!--Muzeum Controller-->
+        <scene sceneID="p5a-Up-Eub">
+            <objects>
+                <viewController storyboardIdentifier="KZMMuzeumController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Eny-kz-r3X" customClass="KZMMuzeumController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OAz-Pk-dq2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gfb-pM-hEP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ip9-Cd-AnN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4. museum_izo" translatesAutoresizingMaskIntoConstraints="NO" id="Kd2-Tr-Sh6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kd2-Tr-Sh6" firstAttribute="leading" secondItem="Ip9-Cd-AnN" secondAttribute="leadingMargin" constant="-16" id="86z-iq-gmM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kd2-Tr-Sh6" secondAttribute="trailing" constant="-16" id="Thq-jL-rmb"/>
+                            <constraint firstItem="Gfb-pM-hEP" firstAttribute="top" secondItem="Kd2-Tr-Sh6" secondAttribute="bottom" id="uYN-HC-RX5"/>
+                            <constraint firstItem="Kd2-Tr-Sh6" firstAttribute="top" secondItem="Ip9-Cd-AnN" secondAttribute="topMargin" id="wtC-ES-a2E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NDk-Ff-fy0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="128"/>
+        </scene>
+        <!--Root Navigation Controller-->
+        <scene sceneID="w7H-wo-3UC">
+            <objects>
+                <navigationController storyboardIdentifier="RootNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sv0-0P-J2m" customClass="RootNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pBR-Rs-1OJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tbY-Bk-RbZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxG-Go-diL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="128"/>
         </scene>
     </scenes>
     <resources>
         <image name="1. kremlin" width="320" height="568"/>
+        <image name="4. museum_izo" width="320" height="568"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

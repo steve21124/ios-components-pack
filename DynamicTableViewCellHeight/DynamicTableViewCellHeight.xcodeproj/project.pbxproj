@@ -17,7 +17,12 @@
 		75A59F3D1ACB440C009958DE /* KZMMuzeumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A59F3B1ACB440C009958DE /* KZMMuzeumCell.m */; };
 		75A59F3E1ACB440C009958DE /* KZMMuzeumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A59F3C1ACB440C009958DE /* KZMMuzeumCell.xib */; };
 		75A59F421ACB4FB6009958DE /* Dynamic Table View Height.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A59F411ACB4FB6009958DE /* Dynamic Table View Height.png */; };
-		75A59F441ACBD9D8009958DE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 75A59F431ACBD9D8009958DE /* README.md */; };
+		75A59F461ACBEC92009958DE /* DynamicTableViewCell -CustomImages.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A59F451ACBEC92009958DE /* DynamicTableViewCell -CustomImages.png */; };
+		75A59F4C1ACBED16009958DE /* KZMMainTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A59F4A1ACBED16009958DE /* KZMMainTitleCell.m */; };
+		75A59F4D1ACBED16009958DE /* KZMMainTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A59F4B1ACBED16009958DE /* KZMMainTitleCell.xib */; };
+		75A59F501ACD499D009958DE /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A59F4F1ACD499D009958DE /* RootNavigationController.m */; };
+		75A59F551ACD4E6E009958DE /* UIImage+Workers.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A59F541ACD4E6E009958DE /* UIImage+Workers.m */; };
+		75A59F5A1ACD524A009958DE /* KZMMuzeumController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A59F591ACD524A009958DE /* KZMMuzeumController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,16 @@
 		75A59F3C1ACB440C009958DE /* KZMMuzeumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KZMMuzeumCell.xib; sourceTree = "<group>"; };
 		75A59F411ACB4FB6009958DE /* Dynamic Table View Height.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dynamic Table View Height.png"; sourceTree = "<group>"; };
 		75A59F431ACBD9D8009958DE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		75A59F451ACBEC92009958DE /* DynamicTableViewCell -CustomImages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DynamicTableViewCell -CustomImages.png"; sourceTree = "<group>"; };
+		75A59F491ACBED16009958DE /* KZMMainTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZMMainTitleCell.h; sourceTree = "<group>"; };
+		75A59F4A1ACBED16009958DE /* KZMMainTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZMMainTitleCell.m; sourceTree = "<group>"; };
+		75A59F4B1ACBED16009958DE /* KZMMainTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KZMMainTitleCell.xib; sourceTree = "<group>"; };
+		75A59F4E1ACD499D009958DE /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
+		75A59F4F1ACD499D009958DE /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
+		75A59F531ACD4E6E009958DE /* UIImage+Workers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Workers.h"; sourceTree = "<group>"; };
+		75A59F541ACD4E6E009958DE /* UIImage+Workers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Workers.m"; sourceTree = "<group>"; };
+		75A59F581ACD524A009958DE /* KZMMuzeumController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZMMuzeumController.h; sourceTree = "<group>"; };
+		75A59F591ACD524A009958DE /* KZMMuzeumController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZMMuzeumController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +89,7 @@
 			children = (
 				75A59F431ACBD9D8009958DE /* README.md */,
 				75A59F411ACB4FB6009958DE /* Dynamic Table View Height.png */,
+				75A59F451ACBEC92009958DE /* DynamicTableViewCell -CustomImages.png */,
 				75A59F031ACB3E4C009958DE /* DynamicTableViewCellHeight */,
 				75A59F1D1ACB3E4C009958DE /* DynamicTableViewCellHeightTests */,
 				75A59F021ACB3E4C009958DE /* Products */,
@@ -97,6 +113,7 @@
 				75A59F2B1ACB3E66009958DE /* Storyboards */,
 				75A59F371ACB43D4009958DE /* Views */,
 				75A59F381ACB43D9009958DE /* Controllers */,
+				75A59F521ACD4E3F009958DE /* Categories */,
 				75A59F2C1ACB3E6E009958DE /* Resources */,
 				75A59F041ACB3E4C009958DE /* Supporting Files */,
 			);
@@ -168,7 +185,7 @@
 		75A59F371ACB43D4009958DE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				75A59F361ACB43C7009958DE /* Muzeum Cell */,
+				75A59F481ACBECF2009958DE /* Cells */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -176,9 +193,65 @@
 		75A59F381ACB43D9009958DE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				75A59F511ACD49A3009958DE /* Root Navigation */,
 				75A59F2A1ACB3E5B009958DE /* Home */,
+				75A59F571ACD51DF009958DE /* Muzeum */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		75A59F471ACBECE6009958DE /* Main Title Cell */ = {
+			isa = PBXGroup;
+			children = (
+				75A59F491ACBED16009958DE /* KZMMainTitleCell.h */,
+				75A59F4A1ACBED16009958DE /* KZMMainTitleCell.m */,
+				75A59F4B1ACBED16009958DE /* KZMMainTitleCell.xib */,
+			);
+			name = "Main Title Cell";
+			sourceTree = "<group>";
+		};
+		75A59F481ACBECF2009958DE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				75A59F471ACBECE6009958DE /* Main Title Cell */,
+				75A59F361ACB43C7009958DE /* Muzeum Cell */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		75A59F511ACD49A3009958DE /* Root Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				75A59F4E1ACD499D009958DE /* RootNavigationController.h */,
+				75A59F4F1ACD499D009958DE /* RootNavigationController.m */,
+			);
+			name = "Root Navigation";
+			sourceTree = "<group>";
+		};
+		75A59F521ACD4E3F009958DE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				75A59F561ACD4E72009958DE /* UIIMage */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		75A59F561ACD4E72009958DE /* UIIMage */ = {
+			isa = PBXGroup;
+			children = (
+				75A59F531ACD4E6E009958DE /* UIImage+Workers.h */,
+				75A59F541ACD4E6E009958DE /* UIImage+Workers.m */,
+			);
+			name = UIIMage;
+			sourceTree = "<group>";
+		};
+		75A59F571ACD51DF009958DE /* Muzeum */ = {
+			isa = PBXGroup;
+			children = (
+				75A59F581ACD524A009958DE /* KZMMuzeumController.h */,
+				75A59F591ACD524A009958DE /* KZMMuzeumController.m */,
+			);
+			name = Muzeum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +337,9 @@
 				75A59F101ACB3E4C009958DE /* Main.storyboard in Resources */,
 				75A59F151ACB3E4C009958DE /* LaunchScreen.xib in Resources */,
 				75A59F421ACB4FB6009958DE /* Dynamic Table View Height.png in Resources */,
+				75A59F461ACBEC92009958DE /* DynamicTableViewCell -CustomImages.png in Resources */,
 				75A59F121ACB3E4C009958DE /* Images.xcassets in Resources */,
+				75A59F4D1ACBED16009958DE /* KZMMainTitleCell.xib in Resources */,
 				75A59F3E1ACB440C009958DE /* KZMMuzeumCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +360,10 @@
 			files = (
 				75A59F0A1ACB3E4C009958DE /* AppDelegate.m in Sources */,
 				75A59F071ACB3E4C009958DE /* main.m in Sources */,
-				75A59F441ACBD9D8009958DE /* README.md in Sources */,
+				75A59F5A1ACD524A009958DE /* KZMMuzeumController.m in Sources */,
+				75A59F501ACD499D009958DE /* RootNavigationController.m in Sources */,
+				75A59F4C1ACBED16009958DE /* KZMMainTitleCell.m in Sources */,
+				75A59F551ACD4E6E009958DE /* UIImage+Workers.m in Sources */,
 				75A59F321ACB4248009958DE /* KZMHomeController.m in Sources */,
 				75A59F3D1ACB440C009958DE /* KZMMuzeumCell.m in Sources */,
 			);

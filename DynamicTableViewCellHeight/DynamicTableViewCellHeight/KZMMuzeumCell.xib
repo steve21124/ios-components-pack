@@ -22,7 +22,7 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="142" id="dFG-fY-o1z"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                         <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>

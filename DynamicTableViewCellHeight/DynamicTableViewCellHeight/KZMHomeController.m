@@ -7,7 +7,12 @@
 //
 
 #import "KZMHomeController.h"
+
 #import "KZMMuzeumCell.h"
+#import "KZMMainTitleCell.h"
+
+#import "KZMMuzeumController.h"
+#import "RootNavigationController.h"
 
 @interface KZMHomeController () <UITableViewDataSource, UITableViewDelegate>
 {
@@ -15,6 +20,7 @@
     NSArray *_imageData;
     
     KZMMuzeumCell *_nameCell;
+    KZMMainTitleCell *_titleCell;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -32,10 +38,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[RootNavigationController sharedController] setNavigationBarStyle:NavigationBarStyleClear];
+    [[RootNavigationController sharedController] setBackBarButtonStyle:BarButtonStyleWhite];
+    
+    //Name Cell
     UINib *cellNib = [UINib nibWithNibName:@"KZMMuzeumCell" bundle:nil];
     [self.tableView registerNib:cellNib forCellReuseIdentifier:@"MuzeumCell"];
-    
     _nameCell = [cellNib instantiateWithOwner:nil options:nil][0];
+    
+    //Title Cell
+    UINib *cellTitleNib = [UINib nibWithNibName:@"KZMMainTitleCell" bundle:nil];
+    [self.tableView registerNib:cellTitleNib forCellReuseIdentifier:@"MainTitleCell"];
+    _titleCell = [cellTitleNib instantiateWithOwner:nil options:nil][0];
     
     _tableData = @[
                    @"Центр современной культуры Смена",
@@ -69,7 +83,6 @@
                    ];
     
     
-    
     _imageData = @[@"icon_tukay",
                    @"icon_university",
                    @"icon_kremlin",
@@ -85,7 +98,6 @@
                    @"icon_gorky",
                    @"icon_statehood",
                    @"icon_tolstoy"
-                   
                    ];
     
     //[self configureTableView];
@@ -111,10 +123,24 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    KZMMuzeumCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MuzeumCell" forIndexPath:indexPath];
+    if (indexPath.row == 0) {
+        KZMMainTitleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MainTitleCell" forIndexPath:indexPath];
+        [self configureTitleCell:cell atIndexPath:indexPath];
+        return cell;
+    }
     
+    KZMMuzeumCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MuzeumCell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
+}
+
+- (void)configureTitleCell:(KZMMainTitleCell *)cell atIndexPath:(NSIndexPath *)indexPath
+{
+    //Cell Selection
+    //cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    UIView *selectedView = [[UIView alloc]init];
+    selectedView.backgroundColor = [UIColor blackColor];
+    cell.selectedBackgroundView = selectedView;
 }
 
 - (void)configureCell:(KZMMuzeumCell *)cell atIndexPath:(NSIndexPath *)indexPath
@@ -130,20 +156,27 @@
     //cell.selectionStyle = UITableViewCellSelectionStyleNone;
     UIView *selectedView = [[UIView alloc]init];
     selectedView.backgroundColor = [UIColor blackColor];
-    
     cell.selectedBackgroundView = selectedView;
 }
 
 #pragma mark - Cell Height
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    [self configureCell:_nameCell atIndexPath:indexPath];
-//    [_nameCell layoutSubviews];
-//    
-//    CGFloat height = [_nameCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-//    return height + 1;
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGFloat height;
+    if (indexPath.row == 0) {
+        [self configureTitleCell:_titleCell atIndexPath:indexPath];
+        [_titleCell layoutSubviews];
+         height = [_titleCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    }
+    else {
+        [self configureCell:_nameCell atIndexPath:indexPath];
+        [_nameCell layoutSubviews];
+        height = [_nameCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    }
+    
+    return height + 1;
+}
 
 //- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 //{
@@ -155,13 +188,12 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"\n\n didSelect = %ld", (long)indexPath.row);
+    
+    KZMMuzeumController *muzeumVC = [self.storyboard instantiateViewControllerWithIdentifier:@"KZMMuzeumController"];
+    
+    [self.navigationController pushViewController:muzeumVC animated:YES];
 }
 
-#pragma mark - Status Bar
 
-//In Project-Info.plist set to UIViewControllerBasedStatusBarAppearance = YES.
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
-}
 
 @end
