@@ -1,0 +1,1126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PWJ-hp-fDW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Slide Out Menu Controller-->
+        <scene sceneID="pPb-SP-BjF">
+            <objects>
+                <tableViewController storyboardIdentifier="SlideOutMenuController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FbR-wb-1rx" customClass="SlideOutMenuController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="FDK-nf-AZf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="iHW-qV-Mag">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Vgw-g2-Jfe">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vgw-g2-Jfe" id="dqZ-Ab-R3q">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Национальный музей" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGU-Gc-iE6">
+                                                    <rect key="frame" x="22" y="11" width="173" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Sum-fZ-Tef">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sum-fZ-Tef" id="mjy-Q6-jS6">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Музей Пушечный двор" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKW-WD-SXM">
+                                                    <rect key="frame" x="22" y="11" width="184" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rAE-5q-K1c">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rAE-5q-K1c" id="wQr-CK-o1G">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Музей истории Университета" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AS4-XO-qJF">
+                                                    <rect key="frame" x="22" y="11" width="239" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="FbR-wb-1rx" id="HfP-zL-kGX"/>
+                            <outlet property="delegate" destination="FbR-wb-1rx" id="GSA-Is-tHa"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ee8-A1-RK0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1573" y="-1316"/>
+        </scene>
+        <!--Home Controller-->
+        <scene sceneID="NSZ-Nm-BI9">
+            <objects>
+                <viewController storyboardIdentifier="HomeController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i2z-Fy-tfj" customClass="HomeController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vdr-WB-Sn4"/>
+                        <viewControllerLayoutGuide type="bottom" id="a4t-mf-PjN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SeN-ap-xp0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99455026092302834" green="1" blue="0.6865304837839924" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wc9-Me-dph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1176" y="-1316"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="JEf-0g-iub">
+            <objects>
+                <viewController storyboardIdentifier="SWRevealViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PWJ-hp-fDW" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lJi-CI-ATV"/>
+                        <viewControllerLayoutGuide type="bottom" id="I3h-vg-GVH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qnU-fK-HfC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="BH1-U8-AzE" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="ON0-Ul-2Qp"/>
+                        <segue destination="qVm-C8-dzb" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="v7H-YW-8L9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AxY-KV-EB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-903" y="238"/>
+        </scene>
+        <!--Left Menu Controller-->
+        <scene sceneID="C4b-g8-Bmh">
+            <objects>
+                <tableViewController restorationIdentifier="KMLeftMenuController" storyboardIdentifier="KMLeftMenuController" id="Sa2-Ae-YuU" customClass="KMLeftMenuController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fAI-cg-Bhk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="home" rowHeight="43" id="cRf-Xe-F4j">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cRf-Xe-F4j" id="bbO-Rf-ChF">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Казанские музеи" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpP-uK-7hS">
+                                            <rect key="frame" x="28" y="10" width="138" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="bpP-uK-7hS" secondAttribute="bottom" constant="2.5" id="B9r-BX-0Bv"/>
+                                        <constraint firstItem="bpP-uK-7hS" firstAttribute="top" secondItem="bbO-Rf-ChF" secondAttribute="topMargin" constant="2" id="cqv-Yc-Mwg"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="bpP-uK-7hS" secondAttribute="trailing" constant="146" id="eEu-DA-YIW"/>
+                                        <constraint firstItem="bpP-uK-7hS" firstAttribute="leading" secondItem="bbO-Rf-ChF" secondAttribute="leadingMargin" constant="20" id="kvp-fk-ruc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="qVm-C8-dzb" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Jb4-FE-RP9"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kremlin" rowHeight="62" id="Hj5-yT-OVM">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hj5-yT-OVM" id="uvJ-xs-5vP">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Музей-заповедник Казанский Кремль" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iN4-mg-S3q">
+                                            <rect key="frame" x="28" y="10" width="205" height="41"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="41" id="O1b-A1-ntO"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="efB-gS-Umw"/>
+                                                <constraint firstAttribute="width" constant="205" id="oza-tF-tRZ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="iN4-mg-S3q" firstAttribute="leading" secondItem="uvJ-xs-5vP" secondAttribute="leadingMargin" constant="20" id="BTk-vD-pMd"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="iN4-mg-S3q" secondAttribute="bottom" constant="2.5" id="EF2-rS-lQm"/>
+                                        <constraint firstItem="iN4-mg-S3q" firstAttribute="top" secondItem="uvJ-xs-5vP" secondAttribute="topMargin" constant="2" id="OuA-U3-YIX"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="iN4-mg-S3q" secondAttribute="trailing" constant="79" id="kQS-Rg-KnU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="TGG-cU-RtE" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="mQc-ju-fWz"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cannon" rowHeight="50" id="54n-HF-7D3">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="54n-HF-7D3" id="dsW-9h-AAd">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Музей Пушечный двор" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZ7-ZC-Qqv">
+                                            <rect key="frame" x="29" y="11" width="205" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="205" id="eQA-tr-sEU"/>
+                                                <constraint firstAttribute="height" constant="24" id="fJy-bV-6se"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="EZ7-ZC-Qqv" secondAttribute="bottom" constant="7" id="06d-aH-x24"/>
+                                        <constraint firstItem="EZ7-ZC-Qqv" firstAttribute="top" secondItem="dsW-9h-AAd" secondAttribute="topMargin" constant="3" id="94X-8q-osx"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="EZ7-ZC-Qqv" secondAttribute="trailing" constant="78" id="LZu-eQ-Uh9"/>
+                                        <constraint firstItem="EZ7-ZC-Qqv" firstAttribute="leading" secondItem="dsW-9h-AAd" secondAttribute="leadingMargin" constant="21" id="VOA-kP-hrY"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="qwc-lh-zet" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="UOc-Uc-6H5"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="national" rowHeight="63" id="hqh-1m-MDb">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hqh-1m-MDb" id="eYP-ke-5BY">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Национальный музей Республики Татарстан" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjz-5J-TKa">
+                                            <rect key="frame" x="28" y="13" width="185" height="37"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="185" id="oSv-lU-DUf"/>
+                                                <constraint firstAttribute="height" constant="37" id="trm-F5-TKY"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jjz-5J-TKa" firstAttribute="top" secondItem="eYP-ke-5BY" secondAttribute="topMargin" constant="5" id="2Al-Vx-htA"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="jjz-5J-TKa" secondAttribute="bottom" constant="5" id="3iQ-oB-w7Z"/>
+                                        <constraint firstItem="jjz-5J-TKa" firstAttribute="leading" secondItem="eYP-ke-5BY" secondAttribute="leadingMargin" constant="20" id="ThQ-Py-2ZV"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="jjz-5J-TKa" secondAttribute="trailing" constant="99" id="dXA-he-zRf"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="izo" rowHeight="75" id="Fp3-WE-UgK">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fp3-WE-UgK" id="uVP-pt-mkp">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Музей изобразительных искусств Республики Татарстан" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9J-HA-8AU">
+                                            <rect key="frame" x="27" y="8" width="191" height="56"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="56" id="OB2-YJ-vzM"/>
+                                                <constraint firstAttribute="width" constant="191" id="dda-Ff-AGV"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="b9J-HA-8AU" secondAttribute="bottom" constant="2.5" id="9a6-cO-xMB"/>
+                                        <constraint firstItem="b9J-HA-8AU" firstAttribute="leading" secondItem="uVP-pt-mkp" secondAttribute="leadingMargin" constant="19" id="EYO-Ow-DaX"/>
+                                        <constraint firstItem="b9J-HA-8AU" firstAttribute="top" secondItem="uVP-pt-mkp" secondAttribute="topMargin" id="J0t-e0-RAy"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="b9J-HA-8AU" secondAttribute="trailing" constant="94" id="mJG-7F-5Na"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="hazine" rowHeight="48" id="2P4-Qg-6cy">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2P4-Qg-6cy" id="NZP-VK-hTj">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Национальная галерея Хазинэ" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dk1-Na-tCR">
+                                            <rect key="frame" x="27" y="8" width="258" height="28"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="258" id="6qe-Nt-2uX"/>
+                                                <constraint firstAttribute="height" constant="28" id="cD5-eZ-u8q"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Dk1-Na-tCR" firstAttribute="top" secondItem="NZP-VK-hTj" secondAttribute="topMargin" id="azM-Om-VmV"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Dk1-Na-tCR" secondAttribute="trailing" constant="27" id="ozn-LD-cyb"/>
+                                        <constraint firstItem="Dk1-Na-tCR" firstAttribute="leading" secondItem="NZP-VK-hTj" secondAttribute="leadingMargin" constant="19" id="vBV-tb-zF9"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Sa2-Ae-YuU" id="84h-y9-2vZ"/>
+                            <outlet property="delegate" destination="Sa2-Ae-YuU" id="3KT-Mj-NjX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="6oS-ki-JaC"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="800"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVv-OD-E1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-447" y="1068"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WfB-Fw-S9v">
+            <objects>
+                <navigationController id="BH1-U8-AzE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sWj-5i-Avy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Sa2-Ae-YuU" kind="relationship" relationship="rootViewController" id="SV8-PE-OBb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FbO-GX-GaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-447" y="254"/>
+        </scene>
+        <!--Home Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="KMHomeController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0. intro" translatesAutoresizingMaskIntoConstraints="NO" id="wfj-Kh-dHz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="569"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yR2-V9-Oss">
+                                <rect key="frame" x="28" y="392" width="184" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="BPf-aB-tWa"/>
+                                    <constraint firstAttribute="width" constant="184" id="gPz-Kv-z8L"/>
+                                </constraints>
+                                <string key="text">Казанские 
+Музеи</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="38"/>
+                                <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yR2-V9-Oss" firstAttribute="top" secondItem="wfj-Kh-dHz" secondAttribute="bottom" constant="-177" id="6v4-QQ-0c2"/>
+                            <constraint firstItem="wfj-Kh-dHz" firstAttribute="leading" secondItem="yR2-V9-Oss" secondAttribute="trailing" constant="-212" id="PRE-wr-3MQ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="wfj-Kh-dHz" secondAttribute="bottom" constant="-1" id="Tni-oe-8ob"/>
+                            <constraint firstItem="wfj-Kh-dHz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="d2c-tz-ytx"/>
+                            <constraint firstItem="wfj-Kh-dHz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="qEM-0o-ikP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wfj-Kh-dHz" secondAttribute="trailing" constant="-16" id="rlA-RE-TrW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4VP-y0-K5P">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="SVA-yS-ydo"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="revealButtonItem" destination="SVA-yS-ydo" id="9gP-DY-bLJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="481" y="162"/>
+        </scene>
+        <!--Cannon Controller-->
+        <scene sceneID="7ja-f5-EUX">
+            <objects>
+                <viewController storyboardIdentifier="KMCannonController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FYJ-uW-I5j" customClass="KMCannonController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oms-tC-mpm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sxs-bo-bIL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b1A-rw-Uyf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2. cannon_yard" translatesAutoresizingMaskIntoConstraints="NO" id="nhI-8A-HLX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Музей Пушечный двор" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bog-Cu-rt6">
+                                <rect key="frame" x="16" y="471" width="288" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="VXM-xh-Ak8"/>
+                                    <constraint firstAttribute="width" constant="288" id="htp-hX-zBc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nhI-8A-HLX" firstAttribute="leading" secondItem="b1A-rw-Uyf" secondAttribute="leadingMargin" constant="-16" id="1Ws-gG-zxS"/>
+                            <constraint firstItem="nhI-8A-HLX" firstAttribute="top" secondItem="b1A-rw-Uyf" secondAttribute="topMargin" id="LAT-fG-Oq7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nhI-8A-HLX" secondAttribute="trailing" constant="-16" id="Pk4-FM-3yI"/>
+                            <constraint firstItem="Sxs-bo-bIL" firstAttribute="top" secondItem="nhI-8A-HLX" secondAttribute="bottom" id="VHc-Gm-VsJ"/>
+                            <constraint firstItem="bog-Cu-rt6" firstAttribute="leading" secondItem="nhI-8A-HLX" secondAttribute="trailing" constant="-304" id="uBk-Ny-mE7"/>
+                            <constraint firstItem="bog-Cu-rt6" firstAttribute="top" secondItem="nhI-8A-HLX" secondAttribute="bottom" constant="-97" id="zer-Os-6Fp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OOU-Iu-c6C">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="yaG-Kv-bRh"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="revealButtonItem" destination="yaG-Kv-bRh" id="XPr-HK-xn2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9az-1E-Xzu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="521" y="1464"/>
+        </scene>
+        <!--Kremlin Controller-->
+        <scene sceneID="8ON-pB-O35">
+            <objects>
+                <viewController storyboardIdentifier="KMKremlinController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UzB-bQ-x3S" customClass="KMKremlinController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gNC-99-bIK"/>
+                        <viewControllerLayoutGuide type="bottom" id="AMJ-cV-45x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gDx-TQ-EVN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1. kremlin" translatesAutoresizingMaskIntoConstraints="NO" id="R1T-QO-9ek">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Музей-заповедник Казанский Кремль" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4j-V5-OSX">
+                                <rect key="frame" x="16" y="426" width="248" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="Hm6-92-hJN"/>
+                                    <constraint firstAttribute="height" constant="122" id="YnI-dI-SwH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R1T-QO-9ek" firstAttribute="top" secondItem="gDx-TQ-EVN" secondAttribute="topMargin" id="0d3-hJ-xLX"/>
+                            <constraint firstItem="R1T-QO-9ek" firstAttribute="leading" secondItem="gDx-TQ-EVN" secondAttribute="leadingMargin" constant="-16" id="9Ph-4z-vFP"/>
+                            <constraint firstItem="R1T-QO-9ek" firstAttribute="leading" secondItem="W4j-V5-OSX" secondAttribute="trailing" constant="-264" id="Epp-s6-tvf"/>
+                            <constraint firstItem="W4j-V5-OSX" firstAttribute="top" secondItem="R1T-QO-9ek" secondAttribute="bottom" constant="-142" id="LWZ-zd-XHb"/>
+                            <constraint firstItem="AMJ-cV-45x" firstAttribute="top" secondItem="R1T-QO-9ek" secondAttribute="bottom" id="Wf5-ag-ak6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R1T-QO-9ek" secondAttribute="trailing" constant="-16" id="ZsX-aT-k5k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="v7e-SV-Y1F">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="LOg-5d-cdf"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="revealButtonItem" destination="LOg-5d-cdf" id="hct-Z7-euq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kkw-s7-WjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="795"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2CH-lv-KIk">
+            <objects>
+                <viewController id="Wut-wi-mhd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lM6-vF-ecj"/>
+                        <viewControllerLayoutGuide type="bottom" id="NO3-Ed-bWR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HF5-5o-df6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3. national_museum" translatesAutoresizingMaskIntoConstraints="NO" id="cCR-v9-ONX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Национальный музей Республики Татарстан" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkV-YW-yr9">
+                                <rect key="frame" x="19" y="469" width="288" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="Cee-S1-fok"/>
+                                    <constraint firstAttribute="height" constant="74" id="I5a-zJ-n2U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JkV-YW-yr9" firstAttribute="leading" secondItem="cCR-v9-ONX" secondAttribute="trailing" constant="-301" id="3md-FU-0VJ"/>
+                            <constraint firstItem="cCR-v9-ONX" firstAttribute="leading" secondItem="HF5-5o-df6" secondAttribute="leadingMargin" constant="-16" id="a2W-nB-RSv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cCR-v9-ONX" secondAttribute="trailing" constant="-16" id="iIo-sW-bXf"/>
+                            <constraint firstItem="cCR-v9-ONX" firstAttribute="top" secondItem="HF5-5o-df6" secondAttribute="topMargin" id="m0p-pR-pMJ"/>
+                            <constraint firstItem="JkV-YW-yr9" firstAttribute="top" secondItem="cCR-v9-ONX" secondAttribute="bottom" constant="-103" id="ska-Se-x4l"/>
+                            <constraint firstItem="NO3-Ed-bWR" firstAttribute="top" secondItem="cCR-v9-ONX" secondAttribute="bottom" id="tze-0G-obr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RM7-Fn-C9k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="McY-ul-ccK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1436" y="266"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KS1-iF-75p">
+            <objects>
+                <viewController id="T0p-zW-WRK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nLg-nG-fUD"/>
+                        <viewControllerLayoutGuide type="bottom" id="0SD-Sa-2G9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="746-aR-tD0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4. museum_izo" translatesAutoresizingMaskIntoConstraints="NO" id="XdV-dR-eOR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Музей Изобразительных искусств РТ" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYe-fS-Ygh">
+                                <rect key="frame" x="18" y="453" width="248" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="POq-zb-WHU"/>
+                                    <constraint firstAttribute="width" constant="248" id="hhO-cj-Bnj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="XdV-dR-eOR" secondAttribute="trailing" constant="-16" id="2bK-xS-uPa"/>
+                            <constraint firstItem="0SD-Sa-2G9" firstAttribute="top" secondItem="XdV-dR-eOR" secondAttribute="bottom" id="3tL-EH-fYC"/>
+                            <constraint firstItem="XdV-dR-eOR" firstAttribute="leading" secondItem="hYe-fS-Ygh" secondAttribute="trailing" constant="-266" id="Gdp-yw-0DO"/>
+                            <constraint firstItem="XdV-dR-eOR" firstAttribute="top" secondItem="746-aR-tD0" secondAttribute="topMargin" id="QGd-iD-Yvs"/>
+                            <constraint firstItem="XdV-dR-eOR" firstAttribute="leading" secondItem="746-aR-tD0" secondAttribute="leadingMargin" constant="-16" id="sKT-As-Law"/>
+                            <constraint firstItem="hYe-fS-Ygh" firstAttribute="top" secondItem="XdV-dR-eOR" secondAttribute="bottom" constant="-115" id="vgC-wL-nLZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dSy-ZO-Pbn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCp-lc-rX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1436" y="922"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Sop-EC-3a0">
+            <objects>
+                <viewController id="tQg-ey-lSr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HKX-55-h1E"/>
+                        <viewControllerLayoutGuide type="bottom" id="w5I-a6-zBc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="haB-Fh-9UB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6. statehood_museum" translatesAutoresizingMaskIntoConstraints="NO" id="XGH-Ls-q8f">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epv-u6-bAf">
+                                <rect key="frame" x="190" y="20" width="130" height="50"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Переход">
+                                    <color key="titleColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VEm-lJ-nZs" kind="modal" id="PtN-2s-kYn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Музей истории государственности татарского народа" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrx-Vy-RMM">
+                                <rect key="frame" x="16" y="453" width="304" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="Prt-y8-W3K"/>
+                                    <constraint firstAttribute="height" constant="98" id="iG3-LO-b1Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rrx-Vy-RMM" firstAttribute="top" secondItem="XGH-Ls-q8f" secondAttribute="bottom" constant="-115" id="74C-GE-rl3"/>
+                            <constraint firstItem="rrx-Vy-RMM" firstAttribute="leading" secondItem="XGH-Ls-q8f" secondAttribute="trailing" constant="-304" id="K2e-uW-BnA"/>
+                            <constraint firstItem="XGH-Ls-q8f" firstAttribute="top" secondItem="haB-Fh-9UB" secondAttribute="topMargin" id="MDP-ZD-k6N"/>
+                            <constraint firstItem="w5I-a6-zBc" firstAttribute="top" secondItem="XGH-Ls-q8f" secondAttribute="bottom" id="aBh-1T-8wC"/>
+                            <constraint firstItem="XGH-Ls-q8f" firstAttribute="leading" secondItem="haB-Fh-9UB" secondAttribute="leadingMargin" constant="-16" id="lzN-5c-VGj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XGH-Ls-q8f" secondAttribute="trailing" constant="-16" id="ory-h5-PtG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mw8-E3-5ql" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2891" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6BZ-CU-MrH">
+            <objects>
+                <viewController id="VEm-lJ-nZs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yc8-ax-Ro6"/>
+                        <viewControllerLayoutGuide type="bottom" id="O6c-xw-HSR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sZr-b2-F5i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7. smena" translatesAutoresizingMaskIntoConstraints="NO" id="eg9-Xn-51c">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lo-y6-tD2">
+                                <rect key="frame" x="190" y="20" width="130" height="50"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Переход">
+                                    <color key="titleColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="N1N-OA-bzm" kind="modal" id="quH-0b-aud"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Центр современной культуры Смена" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7II-a9-ho5">
+                                <rect key="frame" x="16" y="474" width="293" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="PCq-8i-9ae"/>
+                                    <constraint firstAttribute="width" constant="293" id="qn8-tX-XFd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="eg9-Xn-51c" secondAttribute="trailing" constant="-16" id="57E-Qu-Cmq"/>
+                            <constraint firstItem="O6c-xw-HSR" firstAttribute="top" secondItem="eg9-Xn-51c" secondAttribute="bottom" id="6uK-n9-kkh"/>
+                            <constraint firstItem="eg9-Xn-51c" firstAttribute="leading" secondItem="sZr-b2-F5i" secondAttribute="leadingMargin" constant="-16" id="aDq-J9-dC7"/>
+                            <constraint firstItem="7II-a9-ho5" firstAttribute="top" secondItem="eg9-Xn-51c" secondAttribute="bottom" constant="-94" id="gLy-a1-rnH"/>
+                            <constraint firstItem="7II-a9-ho5" firstAttribute="leading" secondItem="eg9-Xn-51c" secondAttribute="trailing" constant="-304" id="qIr-yY-Sef"/>
+                            <constraint firstItem="eg9-Xn-51c" firstAttribute="top" secondItem="sZr-b2-F5i" secondAttribute="topMargin" id="xdo-iz-wRr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tRS-8f-Uen" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3297" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jC2-03-kdU">
+            <objects>
+                <viewController id="N1N-OA-bzm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uuk-lM-Znf"/>
+                        <viewControllerLayoutGuide type="bottom" id="tOV-7F-ZdW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r4g-4A-sbx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8. muzey_tukaya" translatesAutoresizingMaskIntoConstraints="NO" id="TTu-mF-0vR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXq-2U-VON">
+                                <rect key="frame" x="190" y="20" width="130" height="50"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Переход">
+                                    <color key="titleColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="G59-8b-z54" kind="modal" id="itg-8M-s3A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Литературный Музей Габдуллы Тукая" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFf-nd-DgU">
+                                <rect key="frame" x="16" y="474" width="293" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="Bmu-yg-qCn"/>
+                                    <constraint firstAttribute="height" constant="73" id="NSO-JW-UOc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="TTu-mF-0vR" secondAttribute="trailing" constant="-16" id="0Bv-iL-W5s"/>
+                            <constraint firstItem="DFf-nd-DgU" firstAttribute="top" secondItem="TTu-mF-0vR" secondAttribute="bottom" constant="-94" id="25H-FC-OiD"/>
+                            <constraint firstItem="TTu-mF-0vR" firstAttribute="leading" secondItem="r4g-4A-sbx" secondAttribute="leadingMargin" constant="-16" id="8eC-4l-FFT"/>
+                            <constraint firstItem="TTu-mF-0vR" firstAttribute="top" secondItem="r4g-4A-sbx" secondAttribute="topMargin" id="FAu-1L-NPR"/>
+                            <constraint firstItem="tOV-7F-ZdW" firstAttribute="top" secondItem="TTu-mF-0vR" secondAttribute="bottom" id="OwX-Ll-Txf"/>
+                            <constraint firstItem="DFf-nd-DgU" firstAttribute="leading" secondItem="TTu-mF-0vR" secondAttribute="trailing" constant="-304" id="vzV-c7-xY4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hDw-qt-1zs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3683" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4Fh-ZJ-Y7b">
+            <objects>
+                <viewController id="G59-8b-z54" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YyH-Cy-1s5"/>
+                        <viewControllerLayoutGuide type="bottom" id="u1u-tT-8pu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iUJ-Me-U8e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9. lenin_museum" translatesAutoresizingMaskIntoConstraints="NO" id="kMU-9E-cBz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDS-Wy-6fd">
+                                <rect key="frame" x="190" y="20" width="130" height="50"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Переход">
+                                    <color key="titleColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6nD-XM-dHi" kind="modal" id="rSn-Uh-C0M"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BY4-IR-DnN">
+                                <rect key="frame" x="15" y="472" width="293" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="3RU-fv-zPs"/>
+                                    <constraint firstAttribute="width" constant="293" id="PTd-Cu-nak"/>
+                                </constraints>
+                                <string key="text">Дом-музей 
+В.И. Ленина</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="kMU-9E-cBz" secondAttribute="trailing" constant="-16" id="0Gq-eC-yxC"/>
+                            <constraint firstItem="kMU-9E-cBz" firstAttribute="top" secondItem="iUJ-Me-U8e" secondAttribute="topMargin" id="A70-g7-nqL"/>
+                            <constraint firstItem="BY4-IR-DnN" firstAttribute="leading" secondItem="kMU-9E-cBz" secondAttribute="trailing" constant="-305" id="Cxm-yz-M0B"/>
+                            <constraint firstItem="u1u-tT-8pu" firstAttribute="top" secondItem="kMU-9E-cBz" secondAttribute="bottom" id="P4c-kB-qU3"/>
+                            <constraint firstItem="BY4-IR-DnN" firstAttribute="top" secondItem="kMU-9E-cBz" secondAttribute="bottom" constant="-96" id="Tak-GT-mhV"/>
+                            <constraint firstItem="kMU-9E-cBz" firstAttribute="leading" secondItem="iUJ-Me-U8e" secondAttribute="leadingMargin" constant="-16" id="a0o-wy-XbA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUh-gD-gX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4067" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jC8-2D-esJ">
+            <objects>
+                <viewController id="6nD-XM-dHi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PzD-vA-ETm"/>
+                        <viewControllerLayoutGuide type="bottom" id="t6l-BN-s9z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RJf-bu-JZD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10. museum_boratinskiy" translatesAutoresizingMaskIntoConstraints="NO" id="NS2-fC-yIe">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdt-vu-9gj">
+                                <rect key="frame" x="190" y="20" width="130" height="50"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Переход">
+                                    <color key="titleColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Zb7-Dh-2P3" kind="modal" id="JVK-V8-zYZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9o3-ut-nP7">
+                                <rect key="frame" x="13" y="474" width="303" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="303" id="37v-hC-UAW"/>
+                                    <constraint firstAttribute="height" constant="73" id="rG3-RH-JW8"/>
+                                </constraints>
+                                <string key="text">Музей 
+Е.А. Боратынского</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t6l-BN-s9z" firstAttribute="top" secondItem="NS2-fC-yIe" secondAttribute="bottom" id="3jA-n0-CNY"/>
+                            <constraint firstItem="NS2-fC-yIe" firstAttribute="leading" secondItem="RJf-bu-JZD" secondAttribute="leadingMargin" constant="-16" id="IuZ-2v-Mcr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NS2-fC-yIe" secondAttribute="trailing" constant="-16" id="axr-ho-g1J"/>
+                            <constraint firstItem="9o3-ut-nP7" firstAttribute="top" secondItem="NS2-fC-yIe" secondAttribute="bottom" constant="-94" id="dC8-7U-ka3"/>
+                            <constraint firstItem="9o3-ut-nP7" firstAttribute="leading" secondItem="NS2-fC-yIe" secondAttribute="trailing" constant="-307" id="i1c-so-oMw"/>
+                            <constraint firstItem="NS2-fC-yIe" firstAttribute="top" secondItem="RJf-bu-JZD" secondAttribute="topMargin" id="uEa-cW-UJF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJz-4A-iPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4452" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MeS-4c-NRS">
+            <objects>
+                <viewController id="Zb7-Dh-2P3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TnH-JI-8Pj"/>
+                        <viewControllerLayoutGuide type="bottom" id="siU-sV-1rm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7hX-H1-RGe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11. tolstoy_museum2" translatesAutoresizingMaskIntoConstraints="NO" id="HcM-ok-dpB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agt-FC-Zk8">
+                                <rect key="frame" x="190" y="20" width="130" height="50"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Переход">
+                                    <color key="titleColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Njh-cP-TDZ" kind="modal" id="tuC-Ky-hGc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Музей Л.Н. Толстого" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7X-v7-jAi">
+                                <rect key="frame" x="16" y="482" width="293" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="CP7-mb-edg"/>
+                                    <constraint firstAttribute="width" constant="293" id="zk4-BC-FDA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c7X-v7-jAi" firstAttribute="leading" secondItem="HcM-ok-dpB" secondAttribute="trailing" constant="-304" id="C1p-qM-2xm"/>
+                            <constraint firstItem="siU-sV-1rm" firstAttribute="top" secondItem="HcM-ok-dpB" secondAttribute="bottom" id="XCr-Ro-oIn"/>
+                            <constraint firstItem="c7X-v7-jAi" firstAttribute="top" secondItem="HcM-ok-dpB" secondAttribute="bottom" constant="-86" id="jXj-eg-i3t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HcM-ok-dpB" secondAttribute="trailing" constant="-16" id="myU-xb-9ef"/>
+                            <constraint firstItem="HcM-ok-dpB" firstAttribute="top" secondItem="7hX-H1-RGe" secondAttribute="topMargin" id="uez-FG-bqE"/>
+                            <constraint firstItem="HcM-ok-dpB" firstAttribute="leading" secondItem="7hX-H1-RGe" secondAttribute="leadingMargin" constant="-16" id="zeS-i8-1RR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LpC-Fh-GL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4824" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CH2-2I-Mm6">
+            <objects>
+                <viewController id="Njh-cP-TDZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LTL-Pg-c1N"/>
+                        <viewControllerLayoutGuide type="bottom" id="GbE-Du-Jn6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fZe-2e-otF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="efV-b0-sbE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tax-n1-zX2">
+                                <rect key="frame" x="190" y="20" width="130" height="50"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Переход">
+                                    <color key="titleColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Музей истории Казанского университета" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJe-b9-1i6">
+                                <rect key="frame" x="16" y="444" width="293" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="54U-Eo-YMf"/>
+                                    <constraint firstAttribute="height" constant="103" id="ruG-cn-965"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="efV-b0-sbE" secondAttribute="trailing" constant="-16" id="7Sn-yK-xj0"/>
+                            <constraint firstItem="PJe-b9-1i6" firstAttribute="top" secondItem="efV-b0-sbE" secondAttribute="bottom" constant="-124" id="Fbr-ez-len"/>
+                            <constraint firstItem="PJe-b9-1i6" firstAttribute="leading" secondItem="efV-b0-sbE" secondAttribute="trailing" constant="-304" id="gjD-cl-lDk"/>
+                            <constraint firstItem="efV-b0-sbE" firstAttribute="top" secondItem="fZe-2e-otF" secondAttribute="topMargin" id="ijG-DJ-kMQ"/>
+                            <constraint firstItem="efV-b0-sbE" firstAttribute="leading" secondItem="fZe-2e-otF" secondAttribute="leadingMargin" constant="-16" id="mxx-8f-LkH"/>
+                            <constraint firstItem="GbE-Du-Jn6" firstAttribute="top" secondItem="efV-b0-sbE" secondAttribute="bottom" id="q4J-9L-VTg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hi-M2-xto" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5198" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="94w-gy-bYC">
+            <objects>
+                <viewController id="gS9-vL-UPE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EBm-yN-X5N"/>
+                        <viewControllerLayoutGuide type="bottom" id="hLc-Y4-PZ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ixy-il-HTT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="13. museum_gorkiy" translatesAutoresizingMaskIntoConstraints="NO" id="Vzg-3F-PgR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0Z-ZI-of3">
+                                <rect key="frame" x="190" y="20" width="130" height="50"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Переход">
+                                    <color key="titleColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Литературный музей А.M. Горького" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrX-Qg-Ufz">
+                                <rect key="frame" x="16" y="474" width="293" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="KOf-KJ-JpN"/>
+                                    <constraint firstAttribute="width" constant="293" id="pav-NX-Ql5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vzg-3F-PgR" firstAttribute="top" secondItem="Ixy-il-HTT" secondAttribute="topMargin" id="VzJ-Yf-tXB"/>
+                            <constraint firstItem="hLc-Y4-PZ4" firstAttribute="top" secondItem="Vzg-3F-PgR" secondAttribute="bottom" id="W0f-oe-kLS"/>
+                            <constraint firstItem="mrX-Qg-Ufz" firstAttribute="top" secondItem="Vzg-3F-PgR" secondAttribute="bottom" constant="-94" id="aJ2-Fp-vmj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vzg-3F-PgR" secondAttribute="trailing" constant="-16" id="oat-dZ-dBm"/>
+                            <constraint firstItem="Vzg-3F-PgR" firstAttribute="leading" secondItem="Ixy-il-HTT" secondAttribute="leadingMargin" constant="-16" id="t7r-el-k0R"/>
+                            <constraint firstItem="mrX-Qg-Ufz" firstAttribute="leading" secondItem="Vzg-3F-PgR" secondAttribute="trailing" constant="-304" id="twb-z5-wcm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B6W-AH-ZCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2859" y="883"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ohh-gy-90k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qVm-C8-dzb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zy6-5R-gu4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LRS-s6-kOe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KR8-Sa-BT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="162"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AIP-1V-yC9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TGG-cU-RtE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hrj-xO-ITf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UzB-bQ-x3S" kind="relationship" relationship="rootViewController" id="Bp4-cm-lDA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nGB-6z-P24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="795"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9aq-eh-RG4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qwc-lh-zet" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XBF-i6-mwd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FYJ-uW-I5j" kind="relationship" relationship="rootViewController" id="4KR-CB-a0X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XiE-5I-5OV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="1450"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KHU-U4-hbJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AAI-fM-97A" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xQa-eM-ypb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wut-wi-mhd" kind="relationship" relationship="rootViewController" id="S8c-wF-ZR1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tM-w3-0P6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="266"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cM2-bY-J8e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mVF-I9-Fdz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tXs-RD-SfN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="T0p-zW-WRK" kind="relationship" relationship="rootViewController" id="LvE-ST-oR4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qFT-hv-lp4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="922"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WJW-7p-me7">
+            <objects>
+                <viewController id="YYB-Da-WZO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ow6-Oh-nes"/>
+                        <viewControllerLayoutGuide type="bottom" id="r2B-di-6wV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pqM-sX-8HX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="13. museum_gorkiy" translatesAutoresizingMaskIntoConstraints="NO" id="d8H-kB-YKn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BN-Qd-3JB">
+                                <rect key="frame" x="190" y="20" width="130" height="50"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Переход">
+                                    <color key="titleColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Литературный музей А.M. Горького" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgR-4U-349">
+                                <rect key="frame" x="16" y="474" width="293" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="3mk-UE-gba"/>
+                                    <constraint firstAttribute="height" constant="73" id="ean-0N-hAH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97459013660000005" green="0.98874976130000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UgR-4U-349" firstAttribute="top" secondItem="d8H-kB-YKn" secondAttribute="bottom" constant="-94" id="22a-vj-3Pq"/>
+                            <constraint firstItem="d8H-kB-YKn" firstAttribute="top" secondItem="pqM-sX-8HX" secondAttribute="topMargin" id="5uB-b5-9v2"/>
+                            <constraint firstItem="r2B-di-6wV" firstAttribute="top" secondItem="d8H-kB-YKn" secondAttribute="bottom" id="DIx-Ul-apj"/>
+                            <constraint firstItem="UgR-4U-349" firstAttribute="leading" secondItem="d8H-kB-YKn" secondAttribute="trailing" constant="-304" id="NfF-x5-oPe"/>
+                            <constraint firstItem="d8H-kB-YKn" firstAttribute="leading" secondItem="pqM-sX-8HX" secondAttribute="leadingMargin" constant="-16" id="RLx-1b-F6Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d8H-kB-YKn" secondAttribute="trailing" constant="-16" id="yC8-xs-xig"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LxG-pd-ILU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ob-o9-6d5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1436" y="1575"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JrW-VV-Fkn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TLh-rg-xBq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bv7-MC-y1M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YYB-Da-WZO" kind="relationship" relationship="rootViewController" id="obY-Na-dox"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xCr-5a-k97" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="1575"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0. intro" width="320" height="568"/>
+        <image name="1. kremlin" width="320" height="568"/>
+        <image name="10. museum_boratinskiy" width="320" height="568"/>
+        <image name="11. tolstoy_museum2" width="640" height="1136"/>
+        <image name="13. museum_gorkiy" width="640" height="1136"/>
+        <image name="2. cannon_yard" width="320" height="568"/>
+        <image name="3. national_museum" width="320" height="568"/>
+        <image name="4. museum_izo" width="320" height="568"/>
+        <image name="6. statehood_museum" width="320" height="568"/>
+        <image name="7. smena" width="320" height="568"/>
+        <image name="8. muzey_tukaya" width="320" height="568"/>
+        <image name="9. lenin_museum" width="320" height="568"/>
+        <image name="menu" width="28" height="20"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Jb4-FE-RP9"/>
+    </inferredMetricsTieBreakers>
+</document>
