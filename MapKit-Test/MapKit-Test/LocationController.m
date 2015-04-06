@@ -30,6 +30,8 @@
     [self setupLocation];
 }
 
+#pragma mark - Setup
+
 - (void)setupLocation
 {
     self.locationManager = [[CLLocationManager alloc] init];
@@ -37,9 +39,13 @@
     self.locationManager.distanceFilter = kCLDistanceFilterNone;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     
+    
+    //Request Authorization from location manager
     //In `Info.plist`: KEY - NSLocationWhenInUseUsageDescription > VALUE - Location is requered to find out where you are
+    //In `Info.plist`: KEY - NSLocationAlwaysUsageDescription > VALUE - Location is requered to use always
     if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
         [self.locationManager requestWhenInUseAuthorization];
+        //[self.locationManager requestAlwaysAuthorization];
     }
     
     [self.locationManager startUpdatingLocation];
@@ -71,7 +77,6 @@
 //    }
 //}
 
-
 //Calculate distance between two locations.
 //- (void)calculateDistanceBetweenTwoLocations
 //{
@@ -79,7 +84,5 @@
 //    CLLocation *locB = [[CLLocation alloc] initWithLatitude:lat2 longitude:long2];
 //    CLLocationDistance distance = [locA distanceFromLocation:locB];
 //}
-
-
 
 @end
