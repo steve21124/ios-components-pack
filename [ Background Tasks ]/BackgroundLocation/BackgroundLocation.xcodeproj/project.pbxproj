@@ -17,6 +17,9 @@
 		753B5F271AD299F000679AE0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753B5F261AD299F000679AE0 /* CoreLocation.framework */; };
 		753B5F2A1AD29AF300679AE0 /* Application States.png in Resources */ = {isa = PBXBuildFile; fileRef = 753B5F291AD29AF300679AE0 /* Application States.png */; };
 		753B5F2C1AD29D7000679AE0 /* Background Modes.png in Resources */ = {isa = PBXBuildFile; fileRef = 753B5F2B1AD29D7000679AE0 /* Background Modes.png */; };
+		753B5F381AD2CD3300679AE0 /* ComponentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 753B5F371AD2CD3300679AE0 /* ComponentController.m */; };
+		753B5F3D1AD2CD9100679AE0 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 753B5F3C1AD2CD9100679AE0 /* LocationManager.m */; };
+		75EB80031AD5499300A5AA0D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 75EB80021AD5499300A5AA0D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,11 @@
 		753B5F261AD299F000679AE0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		753B5F291AD29AF300679AE0 /* Application States.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Application States.png"; sourceTree = "<group>"; };
 		753B5F2B1AD29D7000679AE0 /* Background Modes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background Modes.png"; sourceTree = "<group>"; };
+		753B5F361AD2CD3300679AE0 /* ComponentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentController.h; sourceTree = "<group>"; };
+		753B5F371AD2CD3300679AE0 /* ComponentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComponentController.m; sourceTree = "<group>"; };
+		753B5F3B1AD2CD9100679AE0 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		753B5F3C1AD2CD9100679AE0 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		75EB80021AD5499300A5AA0D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 		753B5EF11AD2995A00679AE0 = {
 			isa = PBXGroup;
 			children = (
+				75EB80021AD5499300A5AA0D /* README.md */,
 				753B5F2B1AD29D7000679AE0 /* Background Modes.png */,
 				753B5F291AD29AF300679AE0 /* Application States.png */,
 				753B5EFC1AD2995A00679AE0 /* BackgroundLocation */,
@@ -94,6 +103,7 @@
 				753B5F011AD2995A00679AE0 /* AppDelegate.h */,
 				753B5F021AD2995A00679AE0 /* AppDelegate.m */,
 				753B5F231AD2995F00679AE0 /* Controllers */,
+				753B5F3A1AD2CD7400679AE0 /* Managers */,
 				753B5F241AD2996600679AE0 /* Storyboards */,
 				753B5F251AD2996C00679AE0 /* Resources */,
 				753B5EFD1AD2995A00679AE0 /* Supporting Files */,
@@ -130,8 +140,8 @@
 		753B5F231AD2995F00679AE0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				753B5F041AD2995A00679AE0 /* ViewController.h */,
-				753B5F051AD2995A00679AE0 /* ViewController.m */,
+				753B5F351AD2CD1400679AE0 /* Controller */,
+				753B5F391AD2CD3600679AE0 /* Component Controller */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -159,6 +169,42 @@
 				753B5F261AD299F000679AE0 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		753B5F351AD2CD1400679AE0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				753B5F041AD2995A00679AE0 /* ViewController.h */,
+				753B5F051AD2995A00679AE0 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		753B5F391AD2CD3600679AE0 /* Component Controller */ = {
+			isa = PBXGroup;
+			children = (
+				753B5F361AD2CD3300679AE0 /* ComponentController.h */,
+				753B5F371AD2CD3300679AE0 /* ComponentController.m */,
+			);
+			name = "Component Controller";
+			sourceTree = "<group>";
+		};
+		753B5F3A1AD2CD7400679AE0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				753B5F3E1AD2CF0100679AE0 /* Location Manager */,
+			);
+			name = Managers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		753B5F3E1AD2CF0100679AE0 /* Location Manager */ = {
+			isa = PBXGroup;
+			children = (
+				753B5F3B1AD2CD9100679AE0 /* LocationManager.h */,
+				753B5F3C1AD2CD9100679AE0 /* LocationManager.m */,
+			);
+			name = "Location Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +314,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75EB80031AD5499300A5AA0D /* README.md in Sources */,
 				753B5F061AD2995A00679AE0 /* ViewController.m in Sources */,
+				753B5F3D1AD2CD9100679AE0 /* LocationManager.m in Sources */,
 				753B5F031AD2995A00679AE0 /* AppDelegate.m in Sources */,
 				753B5F001AD2995A00679AE0 /* main.m in Sources */,
+				753B5F381AD2CD3300679AE0 /* ComponentController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +512,7 @@
 				753B5F1F1AD2995A00679AE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		753B5F201AD2995A00679AE0 /* Build configuration list for PBXNativeTarget "BackgroundLocationTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +521,7 @@
 				753B5F221AD2995A00679AE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
