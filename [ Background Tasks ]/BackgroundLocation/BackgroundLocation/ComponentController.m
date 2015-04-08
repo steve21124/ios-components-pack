@@ -8,8 +8,11 @@
 
 #import "ComponentController.h"
 #import "LocationManager.h"
+#import "LocationManager.h"
 
-@interface ComponentController ()
+@interface ComponentController () <LocationManagerDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
 
 @end
 
@@ -24,11 +27,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [LocationManager sharedManager].delegate = self;
     [[LocationManager sharedManager] startLocation];
-    
-    [[LocationManager sharedManager] geocodeLocation:^(NSString *address) {
-        
-    }];
+    [[LocationManager sharedManager] startGeocodeLocation];
+}
+
+#pragma mark - LocationManagerDelegate
+
+- (void)locationManagerGetAddress:(NSString *)address
+{
+    self.addressLabel.text = address;
 }
 
 

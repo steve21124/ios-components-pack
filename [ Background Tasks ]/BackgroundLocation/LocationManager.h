@@ -8,13 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol LocationManagerDelegate <NSObject>
+
+@optional
+- (void)locationManagerGetAddress:(NSString *)address;
+
+@end
 
 @interface LocationManager : NSObject
 
+//delegate
+@property (nonatomic, assign) id<LocationManagerDelegate>delegate;
+
+//singleton
 + (instancetype)sharedManager;
 
+//methods
 - (void)startLocation;
-
-- (void)geocodeLocation:(void(^)(NSString *address))addressBlock;
+- (void)startGeocodeLocation;
 
 @end
