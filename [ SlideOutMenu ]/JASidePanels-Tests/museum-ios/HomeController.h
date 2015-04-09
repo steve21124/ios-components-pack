@@ -10,4 +10,6 @@
 
 @interface HomeController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *museumLabel;
+
 @end

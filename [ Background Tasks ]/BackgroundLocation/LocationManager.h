@@ -11,6 +11,7 @@
 @protocol LocationManagerDelegate <NSObject>
 
 @optional
+//delegate methods
 - (void)locationManagerGetAddress:(NSString *)address;
 
 @end

@@ -10,6 +10,7 @@
 
 @interface HomeController ()
 
+
 @end
 
 @implementation HomeController
@@ -22,6 +23,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(msgResponder:) name:@"LeftPanelMsg" object:nil];
+    
+    //self.museumLabel.text = @"Pushka";
+}
+
+- (void)msgResponder:(NSNotification *)notification
+{
+    NSLog(@"name: %@ object: %@", notification.name, notification.object);
+    
+    self.museumLabel.text = notification.object;
 }
 
 

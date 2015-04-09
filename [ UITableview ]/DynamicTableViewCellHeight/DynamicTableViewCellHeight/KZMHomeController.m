@@ -82,7 +82,6 @@
                    @"Музей истории государственности татарского народа"
                    ];
     
-    
     _imageData = @[@"icon_tukay",
                    @"icon_university",
                    @"icon_kremlin",
@@ -106,7 +105,7 @@
 - (void)configureTableView
 {
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    //self.tableView.estimatedRowHeight = 45;
+    //self.tableView.estimatedRowHeight = 50;
 }
 
 #pragma mark - UITableViewDataSource
@@ -134,10 +133,11 @@
     return cell;
 }
 
+#pragma mark - Configures
+
 - (void)configureTitleCell:(KZMMainTitleCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     //Cell Selection
-    //cell.selectionStyle = UITableViewCellSelectionStyleNone;
     UIView *selectedView = [[UIView alloc]init];
     selectedView.backgroundColor = [UIColor blackColor];
     cell.selectedBackgroundView = selectedView;
@@ -153,7 +153,6 @@
     cell.muzeumImageView.image = [UIImage imageNamed:imageName];
     
     //Cell Selection
-    //cell.selectionStyle = UITableViewCellSelectionStyleNone;
     UIView *selectedView = [[UIView alloc]init];
     selectedView.backgroundColor = [UIColor blackColor];
     cell.selectedBackgroundView = selectedView;
@@ -193,7 +192,5 @@
     
     [self.navigationController pushViewController:muzeumVC animated:YES];
 }
-
-
 
 @end

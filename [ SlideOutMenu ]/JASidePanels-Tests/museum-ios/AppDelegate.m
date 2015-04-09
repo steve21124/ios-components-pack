@@ -15,7 +15,6 @@
 #import "KMKremlinController.h"
 
 #import "SlideOutMenuController.h"
-#import "HomeController.h"
 
 @interface AppDelegate ()
 
@@ -38,8 +37,9 @@
     self.viewController.leftPanel = slideMenuController;
     
     //Home Controller
-    HomeController *homeController = [storyboard instantiateViewControllerWithIdentifier:@"HomeController"];
-    self.viewController.centerPanel = [[UINavigationController alloc] initWithRootViewController:homeController];
+    self.homeController = [storyboard instantiateViewControllerWithIdentifier:@"HomeController"];
+    
+    self.viewController.centerPanel = [[UINavigationController alloc] initWithRootViewController:_homeController];
     
     
     //self.viewController.leftPanel = [[KMLeftMenuController alloc] init];
@@ -48,7 +48,6 @@
     
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-    
     
     return YES;
 }

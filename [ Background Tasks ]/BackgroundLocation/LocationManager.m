@@ -173,6 +173,14 @@
         _geocoder = [[CLGeocoder alloc] init];
     
     if (self.geocodeBOOL == NO) {
+        
+//        [self geocodeLocation:^(NSString *address) {
+//            if([_delegate respondsToSelector:@selector(locationManagerGetAddress:)]) {
+//                [_delegate locationManagerGetAddress:address];
+//            }
+//            self.geocodeBOOL = YES;
+//        }];
+        
         //Reverse Geocoding
         NSLog(@"Resolving the Address");
         [self.geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
@@ -199,35 +207,32 @@
     }
 }
 
-//- (void)geocodeLocation:(void(^)(NSString *address))addressBlock
-//{
-//    NSLog(@"Resolving the Address");
-//    
-//    CLLocation *currentLocation = _userLocation;
-//    
-//    //__block NSString *addressText = nil;
-//    [self.geocoder reverseGeocodeLocation:currentLocation completionHandler:^(NSArray *placemarks, NSError *error) {
-//        NSLog(@"Found placemarks: %@, error: %@", placemarks, error);
-//        if (error == nil && [placemarks count] > 0) {
-//            self.placemark = [placemarks lastObject];
-//            
-//            NSString *addressText = [NSString stringWithFormat:@"%@ %@\n%@ %@\n%@, %@",
-//                                      _placemark.subThoroughfare, _placemark.thoroughfare,
-//                                      _placemark.postalCode, _placemark.locality,
-//                                      _placemark.administrativeArea,
-//                                      _placemark.country];
-//            
-//            addressBlock(addressText);
-//            
-//        } else {
-//            NSLog(@"%@", error.debugDescription);
-//            
-//            addressBlock(nil);
-//        }
-//    } ];
-//    
-//    //[self.locationManager stopUpdatingLocation];
-//    //return addressText;
-//}
+- (void)geocodeLocation:(void(^)(NSString *address))addressBlock
+{
+    NSLog(@"Resolving the Address");
+    
+    CLLocation *currentLocation = _userLocation;
+    
+    //__block NSString *addressText = nil;
+    [self.geocoder reverseGeocodeLocation:currentLocation completionHandler:^(NSArray *placemarks, NSError *error) {
+        NSLog(@"Found placemarks: %@, error: %@", placemarks, error);
+       
+        if (error == nil && [placemarks count] > 0) {
+            self.placemark = [placemarks lastObject];
+            
+            NSString *addressText = [NSString stringWithFormat:@"%@ %@\n%@ %@\n%@, %@",
+                                      _placemark.subThoroughfare, _placemark.thoroughfare,
+                                      _placemark.postalCode, _placemark.locality,
+                                      _placemark.administrativeArea,
+                                      _placemark.country];
+            
+            addressBlock(addressText);
+        }
+        else {
+            NSLog(@"%@", error.debugDescription);
+            addressBlock(nil);
+        }
+    }];
+}
 
 @end

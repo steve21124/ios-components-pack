@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomeController.h"
 
 @class JASidePanelController;
 
@@ -15,6 +16,8 @@
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) JASidePanelController *viewController;
+
+@property (nonatomic, strong) HomeController *homeController;
 
 @end
 

@@ -34,8 +34,7 @@
 
 #pragma mark - LocationManagerDelegate
 
-- (void)locationManagerGetAddress:(NSString *)address
-{
+- (void)locationManagerGetAddress:(NSString *)address {
     self.addressLabel.text = address;
 }
 
