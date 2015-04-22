@@ -6,15 +6,13 @@
 //  Copyright (c) 2015 Artur Igberdin. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 typedef enum {
     NavigationBarStyleClear = 0,
     NavigationBarStyleBlue,
-    
     NavigationBarStyleWhiteTransparent,
     NavigationBarStyleBlackTransparent,
-    
     NavigationBarStyleLightGray,
     NavigationBarStyleDarkGray
     
@@ -23,7 +21,7 @@ typedef enum {
 typedef enum {
     BarButtonStyleWhite = 0,
     BarButtonStyleGray,
-    BarButtonStyleLight
+    BarButtonStyleLightGray
     
 } BarButtonStyle;
 

@@ -14,11 +14,11 @@
 		<string>github.com:arthurigberdin/ios-examples-pack.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CustomButton/CustomButton.xcodeproj</string>
+	<string>[ UIControls ]/CustomButton/CustomButton.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3AD6159C9C176F61DB7C2198B09F8095ECEDEA49</key>
-		<string>../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:arthurigberdin/ios-examples-pack.git</string>

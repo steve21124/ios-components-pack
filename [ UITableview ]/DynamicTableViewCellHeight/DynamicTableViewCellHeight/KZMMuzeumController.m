@@ -25,7 +25,7 @@
     [super viewDidLoad];
     
     [[RootNavigationController sharedController] setNavigationBarStyle:NavigationBarStyleClear];
-    [[RootNavigationController sharedController] setBackBarButtonStyle:BarButtonStyleLight];
+    [[RootNavigationController sharedController] setBackBarButtonStyle:BarButtonStyleLightGray];
 }
 
 - (void)viewWillAppear:(BOOL)animated

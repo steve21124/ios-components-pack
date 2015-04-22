@@ -89,7 +89,7 @@ static RootNavigationController *_sharedController;
             }
             break;
                 
-            case BarButtonStyleLight: {
+            case BarButtonStyleLightGray: {
                 topController.navigationItem.leftBarButtonItem.tintColor = [UIColor colorWithWhite:89.0f/255.0f alpha:0.5];
             }
             break;
