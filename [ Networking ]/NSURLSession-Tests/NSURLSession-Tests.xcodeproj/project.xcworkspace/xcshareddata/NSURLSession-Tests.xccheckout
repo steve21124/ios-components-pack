@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>70AAAA25-5DB3-44F9-89CD-4BCB8D399B2B</string>
+	<string>E275A2F4-3DCC-4B7A-8C3D-23F02BCA316E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>UIViewController-IOS</string>
+	<string>NSURLSession-Tests</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>3AD6159C9C176F61DB7C2198B09F8095ECEDEA49</key>
 		<string>github.com:arthurigberdin/ios-examples-pack.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>[ UIViewController ]/SplitControllers-Test/UIViewController-IOS.xcodeproj</string>
+	<string>[ Networking ]/NSURLSession-Tests/NSURLSession-Tests.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3AD6159C9C176F61DB7C2198B09F8095ECEDEA49</key>
